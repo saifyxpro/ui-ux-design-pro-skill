@@ -184,6 +184,216 @@ Title + description + icon. Equal height in grids. Subtle hover lift.
 
 Section title + description + control (toggle, select). Horizontal layout on desktop.
 
+## Landing Page Headers (Navbar)
+
+Headers are the first element users see. A dated header instantly kills credibility. Always use modern patterns.
+
+### Pattern 1: Floating Glass Navbar (Recommended Default)
+
+```css
+.navbar-floating {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 50;
+  padding: 12px 24px;
+  border-radius: 16px;
+  background: oklch(0.98 0 0 / 0.7);
+  backdrop-filter: blur(20px) saturate(1.8);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  border: 1px solid oklch(0.92 0 0 / 0.5);
+  box-shadow:
+    0 4px 24px oklch(0 0 0 / 0.06),
+    0 1px 2px oklch(0 0 0 / 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navbar-floating.scrolled {
+  top: 8px;
+  background: oklch(0.98 0 0 / 0.9);
+  box-shadow: 0 8px 32px oklch(0 0 0 / 0.1);
+}
+```
+
+### Pattern 2: Minimal Sticky (Clean SaaS)
+
+```css
+.navbar-minimal {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 16px 32px;
+  background: oklch(1 0 0 / 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid oklch(0.92 0 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+```
+
+### Pattern 3: Split Layout (Logo Left, Nav Center, CTA Right)
+
+```css
+.navbar-split {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 40px;
+}
+
+.navbar-split .nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.navbar-split .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: oklch(0.4 0 0);
+  transition: color 200ms;
+  text-decoration: none;
+}
+
+.navbar-split .nav-link:hover {
+  color: oklch(0.15 0 0);
+}
+```
+
+### Pattern 4: Mega Menu (Enterprise/Feature-rich)
+
+```css
+.mega-menu-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: oklch(1 0 0);
+  border-top: 1px solid oklch(0.92 0 0);
+  box-shadow: 0 16px 48px oklch(0 0 0 / 0.08);
+  padding: 32px 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: all 200ms ease;
+}
+
+.mega-menu-trigger:hover + .mega-menu-panel,
+.mega-menu-panel:hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+```
+
+### Pattern 5: Centered Logo (Portfolio/Brand-first)
+
+```css
+.navbar-centered {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.navbar-centered .nav-left {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-centered .nav-right {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+}
+```
+
+### Mobile Header (All Patterns)
+
+```css
+.mobile-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: oklch(1 0 0 / 0.98);
+    backdrop-filter: blur(20px);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transform: translateY(-100%);
+    transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .mobile-menu.open {
+    transform: translateY(0);
+  }
+
+  .mobile-menu .nav-link {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 16px 0;
+    border-bottom: 1px solid oklch(0.92 0 0);
+  }
+}
+```
+
+### Header Anti-Patterns (Never Do These)
+
+- Full-width solid colored background bars (looks 2015)
+- Logo + nav links all left-aligned in a row
+- No `backdrop-filter` or glass effect on fixed headers
+- Text-only links without hover transitions
+- Using `<ul><li>` for horizontal nav without resetting styles
+- Fixed header without scroll-state change (feels static)
+- More than 7 nav items visible at once
+- CTA button same style as nav links (should stand out)
+- No mobile menu or hamburger icon on small screens
+- Dropdown menus without animation or delay
+
+### Header Design Rules
+
+1. **Max 5-7 nav items** visible. Group the rest in dropdowns or mega menu
+2. **CTA button always visible** in the navbar (right side)
+3. **Floating headers** must have `top: 12-20px` gap, `border-radius: 12-20px`
+4. **Glass effect** requires `backdrop-filter: blur(12-24px)` + semi-transparent bg
+5. **Scroll behavior** — header should visually change on scroll (shrink, add shadow, increase opacity)
+6. **Logo height** — 28-36px recommended, never larger than 44px
+7. **Nav link font** — 13-15px, medium weight (500), generous spacing (24-32px gap)
+8. **Mobile breakpoint** — hamburger menu below 768px, always
+9. **Z-index** — navbar must be `z-index: 50+` to stay above all content
+10. **Transition** — all navbar animations use `cubic-bezier(0.16, 1, 0.3, 1)` for premium feel
+
 ## Navigation
 
 ### Sidebar
