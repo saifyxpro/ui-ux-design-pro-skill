@@ -381,3 +381,41 @@ Scale: [list values]
 
 [rationale for key choices with dates]
 ```
+
+---
+
+## 7 · Warm Premium Identity
+
+For hardware products, crypto wallets, premium consumer SaaS. Builds emotional trust through warmth.
+
+### Token Set
+
+| Token | Value |
+|---|---|
+| `--brand` | `#FF7F50` (Coral) |
+| `--text-primary` | `#1A1A1A` |
+| `--text-secondary` | `#2D2D2D` |
+| `--bg-primary` | `#FFFFFF` |
+| `--bg-secondary` | `#FFF9F5` (warm tint) |
+| `--shadow-brand` | `rgba(255, 127, 80, 0.15)` |
+| `--radius-card` | `32px` |
+| `--font-display` | `Bricolage Grotesque` |
+| `--font-body` | `Inter` |
+
+### Patterns
+
+- **Mesh gradient backgrounds** — multi-point radial gradients with brand color at 10-15% opacity
+- **Frosted sticky navigation** — `backdrop-filter: blur(20px) saturate(180%)`
+- **Bento grid layout** — asymmetric cards with device mockups, 4-column grid
+- **Brand-tinted shadows** — `box-shadow: 0 8px 32px rgba(255, 127, 80, 0.15)`
+- **Extra-large border radius** — 32-40px for premium feel
+- **Logo strip** — grayscale-to-color hover for partner credibility
+- **Warm neutrals** — warm gray scale (#1A1A1A / #2D2D2D), not slate/cool gray
+
+### Anti-patterns
+
+- Cool or slate color temperatures (breaks warmth)
+- Sharp corners (< 16px radius)
+- Generic gray shadows with no brand tint
+- Dark mode as default (light mode establishes trust)
+- Overusing coral — reserve for CTAs and accents only

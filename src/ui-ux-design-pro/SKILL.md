@@ -18,9 +18,7 @@ Build every interface with senior-level craft, intent, and consistency.
 
 ## Scope
 
-**Use for:** Dashboards, admin panels, SaaS apps, tools, settings pages, data interfaces, AI interfaces, mobile apps.
-
-**Not for:** Landing pages, marketing sites, campaigns.
+**Use for:** Dashboards, admin panels, SaaS apps, tools, settings pages, data interfaces, AI interfaces, mobile apps, landing pages, marketing sites, product showcases.
 
 ---
 
@@ -220,6 +218,12 @@ Apply Hick's law (reduce choices), Fitts's law (size targets by importance), Mil
 
 → Deep dive: `references/cognitive-principles.md`
 
+## Real-World Pattern Library
+
+10 production-tested patterns extracted from shipped landing pages. Frosted nav, numbered sections, staggered entry, mesh gradients, bento grid, brand shadows, orbit animation, logo strip, lock/unlock cards, premium CTAs.
+
+→ Deep dive: `references/real-world-patterns.md`
+
 ---
 
 # The Mandate
@@ -325,6 +329,7 @@ For direction selection guidance and complete example systems:
 | Utility & Function       | Muted, functional density      | GitHub-style tools                 |
 | Data & Analysis          | Chart-optimized, numbers-first | Analytics, BI tools                |
 | Playful & Expressive     | Rounded, colorful, animated    | Creative tools, portfolio          |
+| Warm Premium Identity    | Coral warmth, large radius     | Hardware, crypto, premium consumer |
 
 ---
 
@@ -371,15 +376,15 @@ python3 scripts/design_cli.py audit ./src/App.tsx
 
 | File                         | Rows | Content                                                      |
 | ---------------------------- | ---- | ------------------------------------------------------------ |
-| `data/styles.csv`            | 107  | UI design styles with CSS keywords and accessibility ratings |
-| `data/typography.csv`        | 107  | Google Font pairings with mood keywords and CSS imports      |
+| `data/styles.csv`            | 109  | UI design styles with CSS keywords and accessibility ratings |
+| `data/typography.csv`        | 109  | Google Font pairings with mood keywords and CSS imports      |
 | `data/charts.csv`            | 106  | Data visualization types with library recommendations        |
 | `data/ui-reasoning.csv`      | 131  | Industry-specific UI reasoning rules with anti-patterns      |
 | `data/ux-guidelines.csv`     | 129  | UX guidelines with do/don't examples and code                |
-| `data/colors.csv`            | 127  | Color palettes by industry with hex values                   |
-| `data/products.csv`          | 96   | Product-type design recommendations                          |
+| `data/colors.csv`            | 129  | Color palettes by industry with hex values                   |
+| `data/products.csv`          | 98   | Product-type design recommendations                          |
 | `data/icons.csv`             | 101  | Icon style guidelines                                        |
-| `data/landing.csv`           | 31   | Landing page patterns                                        |
+| `data/landing.csv`           | 33   | Landing page patterns                                        |
 | `data/react-performance.csv` | 45   | React performance guidelines                                 |
 | `data/web-interface.csv`     | 31   | Web interface patterns                                       |
 

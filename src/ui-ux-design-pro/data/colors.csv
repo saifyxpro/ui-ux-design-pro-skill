@@ -126,3 +126,5 @@ No,Product Type,Primary (Hex),Secondary (Hex),CTA (Hex),Background (Hex),Text (H
 124,Environmental/Sustainability,#228B22,#90EE90,#FFD700,#F0FFF0,#006400,#ADFF2F,Forest greens with gold for eco-trust and growth
 125,Environmental/Sustainability,#006400,#98FB98,#32CD32,#FAFAFA,#0F3D0F,#7CFC00,Natural deep/lime greens for sustainable professionalism
 126,Cybersecurity,#8B0000,#DC143C,#1E3A8A,#F8F9FA,#111827,#4B5563,Dark red/black with blue for fortified digital defense and security[1]
+127,AI Education Platform,#4F46E5,#6366F1,#4F46E5,#F8FAFC,#0F172A,#E2E8F0,Single-hue indigo system: indigo-600 primary CTAs + indigo-500 gradient midpoints + slate neutrals. Light-mode first. Gradient CTAs from-indigo-600 to-indigo-500. Premium shadow rgba(79 70 229 / 0.1)
+128,Crypto Hardware Wallet,#FF7F50,#2D2D2D,#FF7F50,#FFFFFF,#1A1A1A,#E5E5E5,Warm coral brand identity: coral #FF7F50 for CTAs and brand shadows. Warm neutral scale (not slate). Mesh gradient backgrounds with coral tints. Shadow-[#FF7F50]/30 for brand-tinted depth

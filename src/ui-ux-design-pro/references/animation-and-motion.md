@@ -222,3 +222,57 @@ Remove `will-change` after animation completes — don't leave it permanently.
 ```
 
 Use scroll-driven animations for: progress bars, parallax backgrounds, reveal-on-scroll. Not for critical UI feedback.
+
+---
+
+## Landing Page Animations
+
+Production-tested keyframes from real landing pages. Full code in `real-world-patterns.md`.
+
+### fadeInUpBlur (Scroll Entry)
+
+```css
+@keyframes fadeInUpBlur {
+  from { opacity: 0; transform: translateY(24px); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+.animate-entry { opacity: 0; animation: fadeInUpBlur 0.8s ease-out forwards; }
+```
+
+Trigger with IntersectionObserver (threshold: 0.1). Stagger with animation-delay (100ms increments, max 700ms).
+
+### orbit-slow (AI Element Rotation)
+
+```css
+@keyframes orbit-slow {
+  0% { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+```
+
+Max 3 orbiting elements. Respect `prefers-reduced-motion`.
+
+### breathe-glow (AI Pulse)
+
+```css
+@keyframes breathe-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(79, 70, 229, 0.15); }
+  50% { box-shadow: 0 0 40px rgba(79, 70, 229, 0.3); }
+}
+```
+
+### flowData (SVG Stroke Animation)
+
+```css
+@keyframes flowData {
+  to { stroke-dashoffset: -20; }
+}
+.data-path { stroke-dasharray: 8 12; animation: flowData 1.5s linear infinite; }
+```
+
+### Grayscale Hover Reveal
+
+```css
+.logo { filter: grayscale(100%) opacity(0.5); transition: all 300ms ease; }
+.logo:hover { filter: grayscale(0%) opacity(1); }
+```

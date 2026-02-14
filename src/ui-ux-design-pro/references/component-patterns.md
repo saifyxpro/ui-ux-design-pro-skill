@@ -542,3 +542,48 @@ Match skeleton shapes to actual content. Never show a generic spinner for form-l
 - Progress bar or step indicator for long operations
 - Cancel button for operations > 5s
 - Never leave user without feedback
+
+---
+
+## Landing Page Components
+
+Production-tested patterns extracted from real landing pages. See `real-world-patterns.md` for full code.
+
+### Frosted Sticky Navigation
+
+Semi-transparent nav with backdrop blur. Maintains scroll context.
+
+```css
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: oklch(1 0 0 / 0.8);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid oklch(0 0 0 / 0.06);
+}
+```
+
+### Numbered Section Headers
+
+Monospace counter + gradient divider line before each section title.
+
+```html
+<div class="flex items-center gap-3 mb-6">
+  <span class="text-[10px] font-mono text-indigo-400 tracking-widest">01</span>
+  <span class="h-px flex-1 bg-gradient-to-r from-indigo-200 to-transparent"></span>
+</div>
+<h2 class="text-4xl font-bold">Section Title</h2>
+```
+
+### Bento Grid
+
+Asymmetric card grid with mixed `col-span` / `row-span`. Use 4-column grid, max 6 cards, large radius (24-32px).
+
+### Logo / Client Strip
+
+Horizontal row with `grayscale(100%) opacity(0.5)` to full color on hover. 4-8 logos, `gap-12`, centered.
+
+### Premium CTA Buttons
+
+Two strategies: **Gradient** (tech/SaaS: `bg-gradient-to-r from-indigo-600 to-indigo-500 rounded-full`) and **Solid Warm** (hardware/consumer: `bg-[#FF7F50] rounded-[32px] shadow-[0_4px_16px_rgba(255,127,80,0.3)]`). Always include arrow-right icon.
