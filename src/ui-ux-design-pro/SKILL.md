@@ -389,6 +389,31 @@ python3 scripts/design_cli.py system "fintech dashboard" --stack react --output 
 python3 scripts/design_cli.py audit ./src/App.tsx
 ```
 
+### Best Practice: Generate Design System JSON First
+
+For the best UI/UX output, always start by generating a design system JSON before writing any code. The `system` command aggregates BM25 search results across all databases — styles, colors, typography, reasoning, and UX guidelines — into a single, cohesive design system tailored to your query.
+
+```bash
+python3 scripts/design_cli.py system "Warmth & Approachability" --stack html --format json --output design-system.json
+```
+
+This produces a complete JSON file containing:
+
+- **Style direction** — matched from 107+ styles
+- **Primary color + palette** — industry-appropriate with triadic harmony
+- **CSS tokens** — 80+ custom properties (colors, spacing, radius, shadows, animations)
+- **Type scale** — 8-step modular scale with line heights
+- **Reasoning rules** — industry-specific do/don't patterns
+- **UX guidelines** — relevant accessibility and interaction guidance
+
+Use the generated JSON as your single source of truth when building components. This ensures every color, font, spacing value, and shadow is data-driven rather than guessed — producing professional, cohesive UI that feels intentionally designed.
+
+> **Example workflow:**
+>
+> 1. `design_cli.py system "your concept" --output design.json` → generates tokens
+> 2. Read the JSON → extract primary color, font family, radius, shadows
+> 3. Apply tokens to your CSS/Tailwind theme → build with confidence
+
 ### Token Presets
 
 `generate_tokens.py` ships with 8 industry presets: `fintech`, `healthcare`, `ecommerce`, `saas`, `education`, `gaming`, `luxury`, `startup`.
