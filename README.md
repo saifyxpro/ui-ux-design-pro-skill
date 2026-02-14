@@ -25,6 +25,86 @@ A senior-level AI skill that provides data-driven design intelligence for buildi
 - **11 Reference Docs** — Intent-first design methodology
 - **18 Platform Templates** — Claude, Cursor, Windsurf, Copilot, Antigravity, Gemini, Cline, Amp, and more
 
+## Prerequisites
+
+| Requirement | Version | Purpose                                                                                               |
+| ----------- | ------- | ----------------------------------------------------------------------------------------------------- |
+| **Python**  | 3.x+    | Required for all 8 design scripts (search, contrast, palette, tokens, typography, system, audit, CLI) |
+| **Node.js** | 18+     | Required for `npx` quick install                                                                      |
+
+<details>
+<summary><b>Install Python</b></summary>
+
+```bash
+# macOS
+brew install python3
+
+# Ubuntu/Debian
+sudo apt update && sudo apt install python3
+
+# Windows
+winget install Python.Python.3.12
+```
+
+</details>
+
+<details>
+<summary><b>Install Node.js</b></summary>
+
+```bash
+# macOS
+brew install node
+
+# Ubuntu/Debian
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt install -y nodejs
+
+# Windows
+winget install OpenJS.NodeJS.LTS
+```
+
+</details>
+
+## Installation
+
+### Quick Install (Recommended)
+
+```bash
+npx skills add https://github.com/saifyxpro/ui-ux-design-pro-skill --skill ui-ux-design-pro
+```
+
+### Manual Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/saifyxpro/ui-ux-design-pro-skill.git
+
+# Copy skill to your AI assistant's skill directory
+
+# For Claude Code
+mkdir -p .claude/skills/
+cp -r src/ui-ux-design-pro .claude/skills/
+
+# For Cursor
+mkdir -p .cursor/skills/
+cp -r src/ui-ux-design-pro .cursor/skills/
+
+# For Windsurf
+mkdir -p .windsurf/skills/
+cp -r src/ui-ux-design-pro .windsurf/skills/
+
+# For Antigravity
+cp -r src/ui-ux-design-pro ~/.gemini/antigravity/skills/
+
+# For Cline
+mkdir -p .cline/skills/
+cp -r src/ui-ux-design-pro .cline/skills/
+
+# For Gemini CLI
+mkdir -p .gemini/skills/
+cp -r src/ui-ux-design-pro .gemini/skills/
+```
+
 ## Before & After
 
 See the difference the skill makes — same prompt, with and without UI/UX Design Pro:
@@ -223,86 +303,6 @@ Intent-first design methodology covering:
 - Cognitive science principles (Hick's, Fitts's, Gestalt)
 - Critique protocol and self-evaluation
 - Design direction examples
-
-## Prerequisites
-
-| Requirement | Version | Purpose                                                                                               |
-| ----------- | ------- | ----------------------------------------------------------------------------------------------------- |
-| **Python**  | 3.x+    | Required for all 8 design scripts (search, contrast, palette, tokens, typography, system, audit, CLI) |
-| **Node.js** | 18+     | Required for `npx` quick install                                                                      |
-
-<details>
-<summary><b>Install Python</b></summary>
-
-```bash
-# macOS
-brew install python3
-
-# Ubuntu/Debian
-sudo apt update && sudo apt install python3
-
-# Windows
-winget install Python.Python.3.12
-```
-
-</details>
-
-<details>
-<summary><b>Install Node.js</b></summary>
-
-```bash
-# macOS
-brew install node
-
-# Ubuntu/Debian
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-sudo apt install -y nodejs
-
-# Windows
-winget install OpenJS.NodeJS.LTS
-```
-
-</details>
-
-## Installation
-
-### Quick Install (Recommended)
-
-```bash
-npx skills add https://github.com/saifyxpro/ui-ux-design-pro-skill --skill ui-ux-design-pro
-```
-
-### Manual Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/saifyxpro/ui-ux-design-pro-skill.git
-
-# Copy skill to your AI assistant's skill directory
-
-# For Claude Code
-mkdir -p .claude/skills/
-cp -r src/ui-ux-design-pro .claude/skills/
-
-# For Cursor
-mkdir -p .cursor/skills/
-cp -r src/ui-ux-design-pro .cursor/skills/
-
-# For Windsurf
-mkdir -p .windsurf/skills/
-cp -r src/ui-ux-design-pro .windsurf/skills/
-
-# For Antigravity
-cp -r src/ui-ux-design-pro ~/.gemini/antigravity/skills/
-
-# For Cline
-mkdir -p .cline/skills/
-cp -r src/ui-ux-design-pro .cline/skills/
-
-# For Gemini CLI
-mkdir -p .gemini/skills/
-cp -r src/ui-ux-design-pro .gemini/skills/
-```
 
 ## Usage
 
