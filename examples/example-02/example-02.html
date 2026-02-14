@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgentFlow - Warm Creative</title>
+    <meta
+      name="description"
+      content="Automate your business operations with intelligent AI agents."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS v4.1 -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        /* Warmth & Approachability Tokens (from design-cli + manual override) */
+        --color-brand-50: #fff9f5; /* Warm tint */
+        --color-brand-100: #ffecd9;
+        --color-brand-200: #ffdcb5;
+        --color-brand-300: #ffc285;
+        --color-brand-400: #ff9d52;
+        --color-brand-500: #ff6b35; /* Coral Primary */
+        --color-brand-600: #f0501a;
+        --color-brand-700: #c73e10;
+        --color-brand-800: #9e3110;
+        --color-brand-900: #7f2b10;
+        --color-brand-950: #451305;
+
+        --color-stone-50: #fafaf9;
+        --color-stone-100: #f5f5f4;
+        --color-stone-200: #e7e5e4;
+        --color-stone-300: #d6d3d1;
+        --color-stone-800: #57534e;
+        --color-stone-900: #44403c;
+        --color-stone-950: #292524;
+
+        /* Typography */
+        --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+        --font-serif: "Fraunces", serif;
+
+        --radius-xl: 1.5rem; /* 24px */
+        --radius-2xl: 1.75rem; /* 28px */
+        --radius-3xl: 2rem; /* 32px */
+
+        --animate-float: float 8s ease-in-out infinite;
+        --animate-blob: blob 10s infinite;
+
+        @keyframes float {
+          0%,
+          100% {
+            transform: translateY(0) rotate(0);
+          }
+          33% {
+            transform: translateY(-15px) rotate(1deg);
+          }
+          66% {
+            transform: translateY(10px) rotate(-1deg);
+          }
+        }
+
+        @keyframes blob {
+          0% {
+            transform: translate(0px, 0px) scale(1);
+          }
+          33% {
+            transform: translate(30px, -50px) scale(1.1);
+          }
+          66% {
+            transform: translate(-20px, 20px) scale(0.9);
+          }
+          100% {
+            transform: translate(0px, 0px) scale(1);
+          }
+        }
+      }
+
+      /* Utility Classes for Warm Feel */
+      @utility glass-warm {
+        @apply bg-white/60 backdrop-blur-md border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+      }
+
+      @utility btn-primary {
+        @apply bg-brand-500 text-white font-bold px-8 py-4 rounded-full shadow-[0_10px_20px_-5px_rgba(255,107,53,0.4)] hover:shadow-[0_15px_25px_-5px_rgba(255,107,53,0.5)] hover:-translate-y-1 transition-all duration-300;
+      }
+
+      @utility card-soft {
+        @apply bg-white rounded-3xl border border-stone-100 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.08)] transition-all duration-500;
+      }
+
+      body {
+        @apply antialiased text-stone-800 bg-stone-50;
+        font-feature-settings: "ss01", "cv01";
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        @apply font-serif font-semibold text-stone-950;
+      }
+    </style>
+  </head>
+  <body class="relative overflow-x-hidden">
+    <!-- Organic Background Blobs -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+      <div
+        class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-brand-100/60 rounded-full mix-blend-multiply filter blur-3xl animate-blob"
+      ></div>
+      <div
+        class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-purple-100/60 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"
+      ></div>
+      <div
+        class="absolute -bottom-32 left-1/3 w-[600px] h-[600px] bg-sky-100/60 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"
+      ></div>
+    </div>
+
+    <!-- Navigation (Pill Style) -->
+    <nav class="fixed top-6 left-0 right-0 z-50 flex justify-center">
+      <div class="glass-warm px-6 py-3 rounded-full flex items-center gap-10">
+        <a
+          href="#"
+          class="flex items-center gap-2 pr-4 border-r border-stone-200/50"
+        >
+          <div
+            class="w-8 h-8 rounded-full bg-brand-500 flex items-center justify-center text-white text-lg"
+          >
+            <i class="ph-fill ph-plant"></i>
+          </div>
+          <span
+            class="font-serif font-bold text-xl tracking-tight text-stone-900"
+            >AgentFlow</span
+          >
+        </a>
+
+        <div class="hidden md:flex items-center gap-6">
+          <a
+            href="#features"
+            class="text-sm font-semibold text-stone-600 hover:text-brand-600 transition-colors"
+            >Features</a
+          >
+          <a
+            href="#about"
+            class="text-sm font-semibold text-stone-600 hover:text-brand-600 transition-colors"
+            >How it Works</a
+          >
+          <a
+            href="#pricing"
+            class="text-sm font-semibold text-stone-600 hover:text-brand-600 transition-colors"
+            >Pricing</a
+          >
+        </div>
+
+        <div class="pl-4 border-l border-stone-200/50">
+          <a
+            href="#"
+            class="bg-stone-900 text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-stone-800 transition-colors shadow-lg shadow-stone-900/10"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="min-h-screen pt-40 pb-20 px-6 flex flex-col items-center text-center justify-center relative"
+    >
+      <span
+        class="inline-block py-1.5 px-4 rounded-full bg-white border border-stone-200 text-sm font-bold text-stone-600 shadow-sm mb-8 animate-fade-in-up"
+      >
+        🌱 Reimagine work with AI
+      </span>
+
+      <h1
+        class="text-6xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight mb-8 max-w-5xl mx-auto"
+      >
+        Cultivate your <br />
+        <span class="italic text-brand-500 pl-4 pr-2">digital workforce.</span>
+      </h1>
+
+      <p
+        class="text-xl md:text-2xl text-stone-600 max-w-2xl mx-auto mb-12 font-medium leading-relaxed"
+      >
+        Beautifully intelligent agents that grow with your business. Simple to
+        train. Joyful to use. Powerful results.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 mb-20">
+        <a href="#" class="btn-primary flex items-center gap-2">
+          Start Growing
+          <i class="ph-bold ph-arrow-right"></i>
+        </a>
+        <a
+          href="#"
+          class="bg-white text-stone-700 font-bold px-8 py-4 rounded-full shadow-sm border border-stone-200 hover:bg-stone-50 hover:border-stone-300 transition-all"
+        >
+          View Gallery
+        </a>
+      </div>
+
+      <!-- Floating Cards / Imagery -->
+      <div class="relative w-full max-w-6xl mx-auto h-[400px] hidden md:block">
+        <!-- Central Dashboard -->
+        <div
+          class="absolute left-1/2 -translate-x-1/2 top-0 w-[600px] card-soft p-2 rotate-2 hover:rotate-0 transition-transform duration-700 z-10"
+        >
+          <div
+            class="bg-stone-50 rounded-2xl h-[350px] overflow-hidden border border-stone-100 flex flex-col"
+          >
+            <div
+              class="h-12 border-b border-stone-200 px-4 flex items-center gap-2"
+            >
+              <div class="w-3 h-3 rounded-full bg-rose-300"></div>
+              <div class="w-3 h-3 rounded-full bg-amber-300"></div>
+              <div class="w-3 h-3 rounded-full bg-emerald-300"></div>
+            </div>
+            <div class="p-8 grid grid-cols-2 gap-6">
+              <div class="bg-white p-4 rounded-2xl shadow-sm">
+                <div
+                  class="w-10 h-10 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center mb-3"
+                >
+                  <i class="ph-fill ph-robot"></i>
+                </div>
+                <div class="h-2 w-20 bg-stone-100 rounded mb-2"></div>
+                <div class="h-2 w-12 bg-stone-100 rounded"></div>
+              </div>
+              <div class="bg-white p-4 rounded-2xl shadow-sm">
+                <div
+                  class="w-10 h-10 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center mb-3"
+                >
+                  <i class="ph-fill ph-chart-pie"></i>
+                </div>
+                <div class="h-2 w-20 bg-stone-100 rounded mb-2"></div>
+                <div class="h-2 w-12 bg-stone-100 rounded"></div>
+              </div>
+              <div
+                class="col-span-2 bg-white p-4 rounded-2xl shadow-sm h-32"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left Floater -->
+        <div
+          class="absolute left-10 lg:left-0 top-10 w-64 card-soft p-5 -rotate-6 animate-float z-0"
+        >
+          <div class="flex items-center gap-4 mb-3">
+            <img
+              src="https://i.pravatar.cc/100?img=5"
+              class="w-12 h-12 rounded-full border-2 border-white shadow-md"
+            />
+            <div>
+              <div class="text-sm font-bold text-stone-900">Sarah K.</div>
+              <div class="text-xs text-stone-500">Marketing Lead</div>
+            </div>
+          </div>
+          <div class="p-3 bg-stone-50 rounded-xl text-sm italic text-stone-600">
+            "This feels like magic! 🌸"
+          </div>
+        </div>
+
+        <!-- Right Floater -->
+        <div
+          class="absolute right-10 lg:right-0 top-20 w-64 card-soft p-5 rotate-3 animate-float delay-700 z-0"
+        >
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-stone-500 uppercase"
+              >Efficiency</span
+            >
+            <span class="text-xs font-bold text-green-600">+124%</span>
+          </div>
+          <div class="h-24 flex items-end justify-between gap-2">
+            <div class="w-full bg-brand-100 rounded-t-lg h-[40%]"></div>
+            <div class="w-full bg-brand-200 rounded-t-lg h-[60%]"></div>
+            <div class="w-full bg-brand-300 rounded-t-lg h-[50%]"></div>
+            <div class="w-full bg-brand-400 rounded-t-lg h-[80%]"></div>
+            <div class="w-full bg-brand-500 rounded-t-lg h-[70%]"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section (Zig Zag) -->
+    <section id="features" class="py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <!-- Feature 1 -->
+        <div class="grid lg:grid-cols-2 gap-20 items-center mb-32">
+          <div class="order-2 lg:order-1 relative">
+            <div
+              class="absolute inset-0 bg-brand-100 rounded-[3rem] rotate-3"
+            ></div>
+            <div
+              class="relative bg-white rounded-[3rem] p-4 shadow-xl rotate-[-2deg] transition-transform hover:rotate-0 duration-500"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+                class="rounded-[2.5rem] w-full h-[400px] object-cover"
+                alt="Interface"
+              />
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <div
+              class="w-16 h-16 rounded-3xl bg-orange-100 text-orange-600 flex items-center justify-center text-3xl mb-8"
+            >
+              <i class="ph-duotone ph-hand-heart"></i>
+            </div>
+            <h2 class="text-5xl font-bold mb-6">Human-centric design.</h2>
+            <p class="text-xl text-stone-600 leading-relaxed mb-8">
+              Technology should adapt to you, not the other way around. Our
+              interface is designed to be as intuitive as a conversation and as
+              comforting as a sketchbook.
+            </p>
+            <ul class="space-y-4">
+              <li
+                class="flex items-center gap-4 text-stone-700 font-medium text-lg"
+              >
+                <div
+                  class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center"
+                >
+                  <i class="ph-bold ph-check"></i>
+                </div>
+                Natural Language Input
+              </li>
+              <li
+                class="flex items-center gap-4 text-stone-700 font-medium text-lg"
+              >
+                <div
+                  class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center"
+                >
+                  <i class="ph-bold ph-check"></i>
+                </div>
+                Visual Workflow Builder
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="grid lg:grid-cols-2 gap-20 items-center mb-32">
+          <div class="order-1">
+            <div
+              class="w-16 h-16 rounded-3xl bg-purple-100 text-purple-600 flex items-center justify-center text-3xl mb-8"
+            >
+              <i class="ph-duotone ph-sparkle"></i>
+            </div>
+            <h2 class="text-5xl font-bold mb-6">Create with joy.</h2>
+            <p class="text-xl text-stone-600 leading-relaxed mb-8">
+              Building automations shouldn't feel like engineering. It should
+              feel like play. Drag, drop, and connect ideas in our infinite
+              canvas.
+            </p>
+            <a
+              href="#"
+              class="text-brand-600 font-bold text-lg hover:underline decoration-2 underline-offset-4"
+              >Explore the Canvas -></a
+            >
+          </div>
+          <div class="order-2 relative">
+            <div
+              class="absolute inset-0 bg-purple-100 rounded-[3rem] -rotate-3"
+            ></div>
+            <div
+              class="relative bg-white rounded-[3rem] p-4 shadow-xl rotate-[2deg] transition-transform hover:rotate-0 duration-500"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+                class="rounded-[2.5rem] w-full h-[400px] object-cover"
+                alt="Collaboration"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Wall -->
+    <section class="py-24 bg-stone-100">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-16">
+          Loved by creative teams
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div class="flex gap-1 text-orange-400 mb-6">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+              ><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+              ><i class="ph-fill ph-star"></i>
+            </div>
+            <p
+              class="text-xl font-serif italic text-stone-800 mb-8 leading-relaxed"
+            >
+              "Finally, an automation tool that doesn't look like a spreadsheet.
+              It's genuinely inspiring to use every day."
+            </p>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://i.pravatar.cc/100?img=12"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <div class="font-bold text-stone-900">Elena R.</div>
+                <div class="text-sm text-stone-500">Design Director</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow md:translate-y-8"
+          >
+            <div class="flex gap-1 text-orange-400 mb-6">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+              ><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+              ><i class="ph-fill ph-star"></i>
+            </div>
+            <p
+              class="text-xl font-serif italic text-stone-800 mb-8 leading-relaxed"
+            >
+              "The 'Warm Creative' interface makes complex logic feel
+              approachable. My entire team adopted it in a week."
+            </p>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://i.pravatar.cc/100?img=33"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <div class="font-bold text-stone-900">Marcus T.</div>
+                <div class="text-sm text-stone-500">Product Lead</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div class="flex gap-1 text-orange-400 mb-6">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+              ><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i
+              ><i class="ph-fill ph-star"></i>
+            </div>
+            <p
+              class="text-xl font-serif italic text-stone-800 mb-8 leading-relaxed"
+            >
+              "Soft, friendly, and powerful. It's the perfect balance for our
+              creative agency workflow."
+            </p>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://i.pravatar.cc/100?img=45"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <div class="font-bold text-stone-900">Priya S.</div>
+                <div class="text-sm text-stone-500">Agency Founder</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing (Cards) -->
+    <section id="pricing" class="py-24 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+            Simple, honest pricing.
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-10 rounded-[2.5rem] border border-stone-200 shadow-sm hover:shadow-xl transition-all"
+          >
+            <h3 class="text-2xl font-bold mb-2">Seedling</h3>
+            <div class="text-5xl font-serif font-bold mb-6 text-stone-900">
+              $0
+              <span class="text-xl font-sans font-normal text-stone-500"
+                >/mo</span
+              >
+            </div>
+            <p class="text-stone-600 mb-8">
+              For individuals just starting to grow their ideas.
+            </p>
+            <a
+              href="#"
+              class="block w-full py-4 rounded-2xl border-2 border-stone-200 text-stone-900 font-bold text-center hover:bg-stone-50 transition-colors"
+              >Start Free</a
+            >
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden transform md:scale-105 border-2 border-brand-500"
+          >
+            <div
+              class="absolute top-0 right-0 w-64 h-64 bg-brand-50/50 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"
+            ></div>
+            <div
+              class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-600 text-xs font-bold mb-4 uppercase tracking-wider border border-brand-200"
+            >
+              Most Popular
+            </div>
+            <h3 class="text-2xl font-bold mb-2 text-stone-900">Bloom</h3>
+            <div class="text-5xl font-serif font-bold mb-6 text-stone-900">
+              $29
+              <span class="text-xl font-sans font-normal text-stone-500"
+                >/mo</span
+              >
+            </div>
+            <p class="text-stone-600 mb-8">
+              For teams ready to scale their operations.
+            </p>
+            <a
+              href="#"
+              class="btn-primary block w-full text-center hover:-translate-y-0.5"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-6 text-center">
+      <div
+        class="max-w-4xl mx-auto bg-brand-100/50 rounded-[3rem] p-12 md:p-24 relative overflow-hidden"
+      >
+        <div
+          class="absolute -top-24 -left-24 w-64 h-64 bg-orange-200 rounded-full mix-blend-multiply filter blur-2xl"
+        ></div>
+        <div
+          class="absolute -bottom-24 -right-24 w-64 h-64 bg-rose-200 rounded-full mix-blend-multiply filter blur-2xl"
+        ></div>
+
+        <h2
+          class="text-5xl md:text-6xl font-serif font-bold mb-8 text-stone-900 relative z-10"
+        >
+          Start your garden today.
+        </h2>
+        <p class="text-xl text-stone-600 mb-10 max-w-xl mx-auto relative z-10">
+          Join 10,000+ creators and teams building softer software.
+        </p>
+        <a
+          href="#"
+          class="btn-primary inline-flex items-center gap-2 text-lg relative z-10"
+        >
+          Create Account
+          <i class="ph-bold ph-heart"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer class="py-12 text-center text-stone-500 text-sm font-medium">
+      <div class="mb-8 flex justify-center gap-6 text-2xl">
+        <a href="#" class="hover:text-brand-500 transition-colors"
+          ><i class="ph-fill ph-instagram-logo"></i
+        ></a>
+        <a href="#" class="hover:text-brand-500 transition-colors"
+          ><i class="ph-fill ph-twitter-logo"></i
+        ></a>
+        <a href="#" class="hover:text-brand-500 transition-colors"
+          ><i class="ph-fill ph-dribbble-logo"></i
+        ></a>
+      </div>
+      <p>© 2026 AgentFlow. Crafted with care.</p>
+    </footer>
+
+    <script>
+      // Simple float animation boost
+      document.addEventListener("mousemove", (e) => {
+        const blobs = document.querySelectorAll(".animate-blob");
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+
+        blobs.forEach((blob, i) => {
+          const speed = (i + 1) * 20;
+          blob.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+        });
+      });
+    </script>
+  </body>
+</html>

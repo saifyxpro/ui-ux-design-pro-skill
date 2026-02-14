@@ -116,16 +116,28 @@ See the difference the skill makes — same prompt, with and without UI/UX Desig
 | <img src="examples/example-01/screenshots/without_skill.png" width="400" alt="Without Skill"> | <img src="examples/example-01/screenshots/with_skill.png" width="400" alt="With Skill"> |
 |                         Generic layout, basic colors, default spacing                         |               Premium typography, refined palette, professional hierarchy               |
 
+### SaaS Landing Page (Example 02) — One-Shotted with Skill
+
+Generated in a single prompt using the skill's design system CLI + "Warmth & Approachability" direction:
+
+<p align="center">
+  <img src="examples/example-02/Agent-flow.png" width="700" alt="AgentFlow - Warm Creative SaaS Landing">
+</p>
+
+> **Prompt:** _"Generate a Warm Creative SaaS landing page using the design CLI"_
+>
+> **Design Direction:** Warmth & Approachability · **Primary:** `#FF6B35` (Coral) · **Fonts:** Fraunces + Plus Jakarta Sans · **Radius:** 24-32px
+
 ## Examples
 
-| #   | Type         | Status         | Description                                                   |
-| --- | ------------ | -------------- | ------------------------------------------------------------- |
-| 01  | Landing Page | ✅ Ready       | Digital product agency with hero, services, testimonials, CTA |
-| 02  | Dashboard    | 🔜 Coming Soon | Fintech analytics dashboard with dark theme                   |
-| 03  | E-commerce   | 🔜 Coming Soon | Product showcase with filters, cart, and checkout             |
-| 04  | SaaS Landing | 🔜 Coming Soon | Feature-rich SaaS marketing page with pricing tiers           |
-| 05  | Portfolio    | 🔜 Coming Soon | Creative portfolio with bento grid layout                     |
-| 06  | Admin Panel  | 🔜 Coming Soon | Data-dense admin interface with charts and tables             |
+| #   | Type         | Status         | Description                                                     |
+| --- | ------------ | -------------- | --------------------------------------------------------------- |
+| 01  | Landing Page | ✅ Ready       | Digital product agency with hero, services, testimonials, CTA   |
+| 02  | SaaS Landing | ✅ Ready       | Warm Creative AI platform — one-shotted with design CLI + skill |
+| 03  | E-commerce   | 🔜 Coming Soon | Product showcase with filters, cart, and checkout               |
+| 04  | SaaS Landing | 🔜 Coming Soon | Feature-rich SaaS marketing page with pricing tiers             |
+| 05  | Portfolio    | 🔜 Coming Soon | Creative portfolio with bento grid layout                       |
+| 06  | Admin Panel  | 🔜 Coming Soon | Data-dense admin interface with charts and tables               |
 
 > More examples are being added regularly. Each example includes before/after screenshots demonstrating the skill's impact.
 
