@@ -22,6 +22,27 @@ Build every interface with senior-level craft, intent, and consistency.
 
 ---
 
+## MANDATORY: Read References Before Designing
+
+**You MUST read all reference files in `references/` before proposing or building any UI.** These are not optional — they contain production-tested patterns, validated token systems, and craft principles that prevent generic output.
+
+**Required reading order:**
+
+1. `references/design-directions.md` — direction selection and example systems
+2. `references/token-architecture.md` — token naming and layering
+3. `references/color-system.md` — oklch palettes, contrast, dark mode
+4. `references/typography.md` — font pairings, scales, hierarchy
+5. `references/spacing-and-layout.md` — grid systems, spacing scales
+6. `references/depth-and-elevation.md` — shadow and border strategies
+7. `references/component-patterns.md` — states, interaction patterns
+8. `references/animation-and-motion.md` — timing, easing, GPU performance
+9. `references/real-world-patterns.md` — 10 shipped production patterns
+10. `references/accessibility.md` — WCAG 2.2, contrast, keyboard nav
+11. `references/cognitive-principles.md` — Hick's, Fitts's, Gestalt
+12. `references/critique-protocol.md` — self-evaluation before showing work
+
+**Do not skip this step.** Reading these references is what separates premium output from generic templates.
+
 # The Problem
 
 You will generate generic output. Your training has seen thousands of dashboards. The patterns are strong.
