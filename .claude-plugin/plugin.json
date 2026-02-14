@@ -1,0 +1,11 @@
+{
+  "name": "ui-ux-design-pro",
+  "description": "UI/UX design intelligence. 107 styles, 127 palettes, 107 font pairings, 106 charts, 131 reasoning rules, 129 UX guidelines, 16 stacks (React, Next.js, Vue, Nuxt.js, Svelte, Astro, Angular, Remix, SolidJS, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, Jetpack Compose, Nuxt UI). 8 Python scripts: BM25 search, contrast checker, palette generator, token generator, type scale calculator, design system generator, UI auditor, CLI. Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, mobile app. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, liquid glass, cyberpunk, spatial UI, data brutalism. Topics: color palette, accessibility, animation, layout, typography, font pairing, spacing, hover, shadow, gradient, design tokens, contrast checker.",
+  "version": "1.0.0",
+  "author": {
+    "name": "saifyxpro"
+  },
+  "license": "MIT",
+  "keywords": ["ui", "ux", "design", "styles", "typography", "color-palette", "accessibility", "charts", "components", "design-tokens", "contrast-checker", "design-system"],
+  "skills": ["./.claude/skills/ui-ux-design-pro"]
+}

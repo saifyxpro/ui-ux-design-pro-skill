@@ -1,0 +1,388 @@
+---
+name: ui-ux-design-pro
+description: >
+  Senior-level UI/UX design skill with data-driven architecture for building
+  premium, production-grade interfaces. Includes: BM25 search engine over
+  1,875+ data rows across 27 CSV databases, 8 Python scripts (search, contrast
+  checker, palette/token/typography generators, design system generator, UI
+  auditor), 16 tech stack guides, 11 reference documents, and 331 lines of
+  intent-first design methodology. Covers: design token architecture, oklch
+  color systems, typography hierarchies, spacing grids, depth strategies,
+  component patterns, animation timing, WCAG 2.2 accessibility, cognitive
+  science principles, and industry-specific reasoning for 30+ industries.
+---
+
+# UI/UX Design Pro
+
+Build every interface with senior-level craft, intent, and consistency.
+
+## Scope
+
+**Use for:** Dashboards, admin panels, SaaS apps, tools, settings pages, data interfaces, AI interfaces, mobile apps.
+
+**Not for:** Landing pages, marketing sites, campaigns.
+
+---
+
+# The Problem
+
+You will generate generic output. Your training has seen thousands of dashboards. The patterns are strong.
+
+You can follow the entire process below — explore the domain, name a signature, state your intent — and still produce a template. Warm colors on cold structures. Friendly fonts on generic layouts.
+
+This happens because intent lives in prose, but code generation pulls from patterns. The gap between them is where defaults win.
+
+---
+
+# Where Defaults Hide
+
+Defaults disguise themselves as infrastructure — parts that feel like they just need to work, not be designed.
+
+**Typography feels like a container.** But typography IS your design. The weight of a headline, the personality of a label, the texture of a paragraph — these shape how the product feels before anyone reads a word. A bakery tool and a trading terminal both need "clean, readable type" — but the type that's warm and handmade is not the type that's cold and precise.
+
+**Navigation feels like scaffolding.** But navigation IS your product. Where you are, where you can go, what matters most. A page floating in space is a component demo, not software.
+
+**Data feels like presentation.** But a number on screen is not design. What does this number mean to the person looking at it? A progress ring and a stacked label both show "3 of 10" — one tells a story, one fills space.
+
+**Token names feel like implementation.** But `--ink` and `--parchment` evoke a world. `--gray-700` and `--surface-2` evoke a template. Someone reading only your tokens should guess what product this is.
+
+There are no structural decisions. Everything is design.
+
+---
+
+# Intent First
+
+Before touching code, answer these — not in your head, out loud.
+
+**Who is this human?** Not "users." The actual person. Where are they when they open this? What's on their mind? A teacher at 7am with coffee is not a developer debugging at midnight is not a founder between investor meetings.
+
+**What must they accomplish?** Not "use the dashboard." The verb. Grade these submissions. Find the broken deployment. Approve the payment.
+
+**What should this feel like?** In words that mean something. "Clean and modern" means nothing. Warm like a notebook? Cold like a terminal? Dense like a trading floor? Calm like a reading app?
+
+If you cannot answer with specifics, stop. Ask the user. Do not guess. Do not default.
+
+## Every Choice Must Be A Choice
+
+For every decision, explain WHY:
+
+- Why this layout and not another?
+- Why this color temperature?
+- Why this typeface?
+- Why this spacing scale?
+- Why this information hierarchy?
+
+If your answer is "it's common" or "it works" — you've defaulted.
+
+**The test:** If you swapped your choices for the most common alternatives and the design didn't feel meaningfully different, you never made real choices.
+
+## Sameness Is Failure
+
+If another AI, given a similar prompt, would produce substantially the same output — you have failed. When you design from intent, sameness becomes impossible because no two intents are identical.
+
+---
+
+# Domain Exploration
+
+**Do not propose any direction until you produce all four:**
+
+**Domain:** Concepts, metaphors, vocabulary from this product's world. Not features — territory. Minimum 5.
+
+**Color world:** What colors exist naturally in this domain? Not "warm" or "cool" — go to the actual world. If this product were a physical space, what would you see? List 5+.
+
+**Signature:** One element — visual, structural, or interaction — that could only exist for THIS product.
+
+**Defaults to reject:** 3 obvious choices for this interface type. You can't avoid patterns you haven't named.
+
+## Proposal Requirements
+
+Your direction must explicitly reference:
+
+- Domain concepts you explored
+- Colors from your color world exploration
+- Your signature element
+- What replaces each default
+
+**The test:** Remove the product name from your proposal. Could someone identify what this is for? If not, it's generic.
+
+---
+
+# Component Checkpoint
+
+**Every time** you write UI code — even small additions — state:
+
+```
+Intent: [who is this human, what must they do, how should it feel]
+Palette: [colors from exploration — and WHY they fit this product]
+Depth: [borders / shadows / layered — and WHY]
+Surfaces: [elevation scale — and WHY this color temperature]
+Typography: [typeface — and WHY it fits the intent]
+Spacing: [base unit and scale]
+```
+
+If you can't explain WHY for each, you're defaulting. Stop and think.
+
+---
+
+# Craft Foundations
+
+## Subtle Layering
+
+The backbone of craft. You should barely notice the system working. When you look at Vercel's dashboard, you don't think "nice borders." You just understand the structure. The craft is invisible.
+
+### Surface Elevation
+
+Surfaces stack: base → cards → dropdowns → overlays. Build a numbered system. In dark mode, higher elevation = slightly lighter. Each jump: only a few percentage points of lightness.
+
+**Key decisions:**
+
+- **Sidebars:** Same background as canvas + subtle border. Different colors fragment visual space.
+- **Dropdowns:** One level above parent surface.
+- **Inputs:** Slightly darker than surroundings — "inset" signals "type here."
+
+### Borders
+
+Low opacity rgba blends with background — defines edges without demanding attention. Build a progression: default → subtle → strong → strongest (focus rings).
+
+**Squint test:** Blur your eyes. Perceive hierarchy without harsh lines.
+
+## Infinite Expression
+
+Every pattern has infinite expressions. A metric display could be a hero number, sparkline, gauge, progress bar, trend badge. Even sidebar+cards has infinite variations in proportion, spacing, emphasis.
+
+**NEVER produce identical output.** Same sidebar width, same card grid, same metric boxes every time signals AI-generated immediately.
+
+## Color Lives Somewhere
+
+Before reaching for a palette, spend time in the product's world. What would you see in the physical version of this space? Your palette should feel like it came FROM somewhere.
+
+**Beyond Temperature:** Is this quiet or loud? Dense or spacious? Serious or playful? Geometric or organic?
+
+**Color Carries Meaning:** Gray builds structure. Color communicates — status, action, emphasis. One accent color with intention beats five without thought.
+
+---
+
+# Design Principles
+
+## Token Architecture
+
+Every color traces to primitives: foreground (text hierarchy), background (surface elevation), border (separation), brand, semantic (success/warning/error). No random hex values.
+
+Build four text levels: primary → secondary → tertiary → muted. Four border levels: default → subtle → strong → strongest. Dedicated control tokens for form elements.
+
+→ Deep dive: `references/token-architecture.md`
+
+## Color System
+
+Use oklch for perceptually uniform scales. Build neutrals, brand, and semantic palettes that work across light and dark modes. APCA contrast for accessible text.
+
+→ Deep dive: `references/color-system.md`
+
+## Typography
+
+Build distinct levels via size + weight + letter-spacing. Headlines: heavy, tight tracking. Body: comfortable weight. Labels: medium, smaller. Data: monospace, `tabular-nums`. Use `clamp()` for fluid scaling.
+
+→ Deep dive: `references/typography.md`
+
+## Spacing
+
+Pick a base (4px or 8px), stick to multiples. Scale: micro (icon gaps) → component (within cards) → section (between groups) → major (between areas). Symmetrical padding. CSS Grid for layout, Flexbox for components.
+
+→ Deep dive: `references/spacing-and-layout.md`
+
+## Depth
+
+Choose ONE and commit: borders-only (dense tools), subtle shadows (approachable), layered shadows (premium cards), surface shifts (background tints). Don't mix.
+
+→ Deep dive: `references/depth-and-elevation.md`
+
+## Components
+
+Every interactive element needs states: default, hover, active, focus, disabled. Data needs states: loading (skeleton), empty, error. Missing states feel broken.
+
+→ Deep dive: `references/component-patterns.md`
+
+## Animation
+
+Fast micro-interactions (150ms), smooth easing. Modals 250ms. Deceleration easing. Respect `prefers-reduced-motion`. GPU-friendly: `transform` and `opacity` only.
+
+→ Deep dive: `references/animation-and-motion.md`
+
+## Accessibility
+
+WCAG 2.2 AA minimum. 4.5:1 text contrast. Keyboard navigation for every action. Focus-visible styling. ARIA roles for complex widgets. Touch targets: 44pt minimum.
+
+→ Deep dive: `references/accessibility.md`
+
+## Cognitive Principles
+
+Apply Hick's law (reduce choices), Fitts's law (size targets by importance), Miller's law (chunk to 7±2), Gestalt grouping (proximity, similarity), progressive disclosure, Von Restorff effect (make key items distinct).
+
+→ Deep dive: `references/cognitive-principles.md`
+
+---
+
+# The Mandate
+
+**Before showing the user, look at what you made.**
+
+Ask: "If they said this lacks craft, what would they mean?" Fix it first.
+
+## The Checks
+
+- **Swap test:** Swap typeface for your usual one — would anyone notice? Swap layout for standard template — would it feel different? Places where swapping wouldn't matter are where you defaulted.
+- **Squint test:** Blur eyes. Perceive hierarchy? Anything jumping out harshly? Craft whispers.
+- **Signature test:** Point to five specific elements where your signature appears. Not "the overall feel" — actual components.
+- **Token test:** Read CSS variables out loud. Do they sound like they belong to this product?
+
+If any check fails, iterate before showing.
+
+→ Full critique protocol: `references/critique-protocol.md`
+
+---
+
+# Avoid
+
+- Harsh borders — if borders are the first thing you see, too strong
+- Dramatic surface jumps — elevation should be whisper-quiet
+- Inconsistent spacing — clearest sign of no system
+- Mixed depth strategies — pick one, commit
+- Missing interaction states — hover, focus, disabled, loading, error
+- Dramatic drop shadows — subtle, not attention-grabbing
+- Large radius on small elements
+- Pure white cards on colored backgrounds
+- Thick decorative borders
+- Gradients and color for decoration — color should mean something
+- Multiple accent colors — dilutes focus
+- Different hues for different surfaces — same hue, shift only lightness
+- Pure black (#000000) for dark mode backgrounds — use #0a0a0a or #121212
+- Native form elements in styled UI — build custom controls
+
+---
+
+# Workflow
+
+## Communication
+
+Be invisible. Don't announce modes or narrate process.
+
+**Never say:** "I'm establishing the design system...", "Let me check system.md..."
+
+**Instead:** Jump into work. State suggestions with reasoning.
+
+## Suggest + Ask
+
+Lead with exploration, then confirm:
+
+```
+Domain: [concepts from this product's world]
+Color world: [colors that exist in this domain]
+Signature: [one element unique to this product]
+Rejecting: [default 1] → [alternative], [default 2] → [alternative]
+
+Direction: [approach connecting to the above]
+
+Does that direction feel right?
+```
+
+## If Project Has system.md
+
+Read `.interface-design/system.md` and apply. Decisions are made.
+
+## If No system.md
+
+1. Explore domain — produce all four required outputs
+2. Propose — direction must reference all four
+3. Confirm — get user buy-in
+4. Build — apply every principle
+5. Evaluate — run mandate checks before showing
+6. Offer to save
+
+## After Every Task
+
+Always offer to save:
+
+```
+Want me to save these patterns to .interface-design/system.md?
+```
+
+Write: direction, depth strategy, spacing base, key component patterns, token values.
+
+---
+
+# Design Directions
+
+For direction selection guidance and complete example systems:
+
+→ `references/design-directions.md`
+
+| Direction                | Feel                           | Best For                           |
+| ------------------------ | ------------------------------ | ---------------------------------- |
+| Precision & Density      | Tight, technical, monochrome   | Dev tools, admin dashboards        |
+| Warmth & Approachability | Generous spacing, soft shadows | Collaborative tools, consumer apps |
+| Sophistication & Trust   | Cool tones, layered depth      | Finance, enterprise B2B            |
+| Boldness & Clarity       | High contrast, dramatic space  | Modern dashboards, data-heavy      |
+| Utility & Function       | Muted, functional density      | GitHub-style tools                 |
+| Data & Analysis          | Chart-optimized, numbers-first | Analytics, BI tools                |
+| Playful & Expressive     | Rounded, colorful, animated    | Creative tools, portfolio          |
+
+---
+
+# Data-Driven Architecture
+
+This skill includes a BM25 search engine over 1,875+ data rows across 27 CSV databases, plus 8 specialized Python scripts accessible via a unified CLI.
+
+## Scripts
+
+All scripts are in `scripts/` and accessible via `design_cli.py`:
+
+```bash
+python3 scripts/design_cli.py <command> [args]
+```
+
+| Command      | Script                   | Purpose                                              |
+| ------------ | ------------------------ | ---------------------------------------------------- |
+| `search`     | `search_design.py`       | BM25 search across all design databases              |
+| `contrast`   | `check_contrast.py`      | WCAG 2.2 / APCA contrast checker                     |
+| `palette`    | `generate_palette.py`    | Color harmony palette generator                      |
+| `tokens`     | `generate_tokens.py`     | CSS custom property generator with presets           |
+| `typography` | `generate_typography.py` | Modular type scale calculator                        |
+| `system`     | `generate_system.py`     | Full design system generator with persistence        |
+| `audit`      | `audit_ui.py`            | UI code quality and accessibility auditor (12 rules) |
+
+### Search Examples
+
+```bash
+python3 scripts/design_cli.py search "SaaS dashboard" --domain style
+python3 scripts/design_cli.py search "healthcare portal" --stack nextjs --format json
+python3 scripts/design_cli.py contrast "#1E293B" "#F8FAFC" --level AAA
+python3 scripts/design_cli.py palette "#2563EB" --harmony triadic --count 5
+python3 scripts/design_cli.py tokens --preset fintech --format css
+python3 scripts/design_cli.py typography --scale golden --format css
+python3 scripts/design_cli.py system "fintech dashboard" --stack react --output design.json
+python3 scripts/design_cli.py audit ./src/App.tsx
+```
+
+### Token Presets
+
+`generate_tokens.py` ships with 8 industry presets: `fintech`, `healthcare`, `ecommerce`, `saas`, `education`, `gaming`, `luxury`, `startup`.
+
+## CSV Databases (1,875+ rows)
+
+| File                         | Rows | Content                                                      |
+| ---------------------------- | ---- | ------------------------------------------------------------ |
+| `data/styles.csv`            | 107  | UI design styles with CSS keywords and accessibility ratings |
+| `data/typography.csv`        | 107  | Google Font pairings with mood keywords and CSS imports      |
+| `data/charts.csv`            | 106  | Data visualization types with library recommendations        |
+| `data/ui-reasoning.csv`      | 131  | Industry-specific UI reasoning rules with anti-patterns      |
+| `data/ux-guidelines.csv`     | 129  | UX guidelines with do/don't examples and code                |
+| `data/colors.csv`            | 127  | Color palettes by industry with hex values                   |
+| `data/products.csv`          | 96   | Product-type design recommendations                          |
+| `data/icons.csv`             | 101  | Icon style guidelines                                        |
+| `data/landing.csv`           | 31   | Landing page patterns                                        |
+| `data/react-performance.csv` | 45   | React performance guidelines                                 |
+| `data/web-interface.csv`     | 31   | Web interface patterns                                       |
+
+### Tech Stacks (16 frameworks)
+
+`data/stacks/` contains framework-specific guidelines for: React, Next.js, Vue, Nuxt.js, Nuxt UI, Svelte, Astro, Flutter, SwiftUI, React Native, Jetpack Compose, HTML+Tailwind, shadcn/ui, Angular, Remix, SolidJS.

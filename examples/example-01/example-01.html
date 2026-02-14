@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stallion - Digital Product Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            orange: '#FF6200',
+                            dark: '#111827',
+                            gray: '#6B7280',
+                            light: '#FAFAFA'
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.05)',
+                        'card': '0 4px 20px rgba(0,0,0,0.03)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-glow {
+            background: radial-gradient(circle at 50% -20%, rgba(224, 242, 254, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-dark bg-white antialiased overflow-x-hidden selection:bg-brand-orange selection:text-white">
+
+    <div class="absolute top-0 inset-x-0 h-[900px] hero-glow -z-10 pointer-events-none"></div>
+
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between relative z-50">
+        <a href="#" class="text-2xl font-serif font-bold italic tracking-tight text-gray-900">Stallion</a>
+        
+        <div class="hidden md:flex items-center gap-10 text-[13px] font-semibold text-gray-600">
+            <a href="#" class="text-gray-900">Home</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">Works</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">Services</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">About Us</a>
+        </div>
+
+        <a href="#" class="bg-gray-900 text-white px-7 py-3 rounded-full text-[13px] font-semibold hover:bg-black transition-colors shadow-sm">
+            Get in Touch
+        </a>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-20 text-center relative z-10">
+        
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-gray-100 shadow-sm mb-10">
+            <span class="w-6 h-6 rounded-full bg-orange-50 flex items-center justify-center text-sm leading-none">👏</span>
+            <span class="text-[11px] font-medium tracking-wide text-gray-600 uppercase">
+                <span class="font-bold text-gray-900">100%</span> Satisfaction rate over 500+ projects
+            </span>
+        </div>
+
+        <h1 class="text-5xl md:text-[5.5rem] font-semibold tracking-tight leading-[1.05] text-gray-900 max-w-4xl mx-auto mb-10">
+            Building High-Impact <span class="font-serif italic font-normal text-gray-800">Digital<br>Products</span> for your brand
+        </h1>
+
+        <a href="#" class="inline-block bg-brand-orange text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-[#e65800] transition-colors shadow-[0_8px_20px_rgba(255,98,0,0.3)] mb-24">
+            Start a Project
+        </a>
+
+        <div class="relative w-full max-w-5xl mx-auto h-[350px] md:h-[450px] flex justify-center items-end">
+            
+            <div class="absolute left-0 md:left-[2%] bottom-10 w-28 md:w-36 h-[220px] md:h-[280px] bg-white rounded-3xl shadow-xl border-[5px] border-white transform -rotate-[10deg] z-10 overflow-hidden hidden sm:block">
+                <img src="assets/mobile.jpeg" class="w-full h-full object-cover opacity-90" alt="UI">
+            </div>
+
+            <div class="absolute left-[15%] md:left-[18%] bottom-6 w-48 md:w-64 h-[200px] md:h-[280px] bg-white rounded-2xl shadow-xl border border-gray-50 transform -rotate-3 z-20 flex flex-col p-4 hidden md:flex">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#F2F9F4] text-green-700 text-[9px] font-bold px-3 py-1.5 rounded shadow-sm whitespace-nowrap text-center">Flexible plans built to<br>scale your leads</div>
+                <div class="w-full h-24 md:h-36 bg-gray-50 rounded-xl mb-4 border border-gray-100"></div>
+                <div class="h-2.5 w-3/4 bg-gray-100 rounded-full mb-2"></div>
+                <div class="h-2.5 w-1/2 bg-gray-100 rounded-full"></div>
+            </div>
+
+            <div class="relative w-64 md:w-80 h-[380px] md:h-[420px] bg-white rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] border-[6px] border-white z-30 flex flex-col overflow-hidden">
+                <div class="w-full h-full bg-[#FAFAFA] flex flex-col pt-8 px-5">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full mx-auto mb-3 flex items-center justify-center">
+                        <div class="w-6 h-6 bg-brand-orange rounded-full"></div>
+                    </div>
+                    <div class="text-center text-[11px] text-gray-400 font-semibold mb-1">Total Balance</div>
+                    <div class="text-center font-bold text-3xl text-gray-900 mb-6">$840<span class="text-gray-400 text-lg">.00</span></div>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 mb-2"></div>
+                            <div class="h-2 w-12 bg-gray-200 rounded-full"></div>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100">
+                            <div class="w-8 h-8 rounded-full bg-green-50 mb-2"></div>
+                            <div class="h-2 w-12 bg-gray-200 rounded-full"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white flex-1 rounded-t-xl shadow-sm border-x border-t border-gray-100 p-4">
+                        <div class="text-[10px] font-bold text-gray-900 mb-3">Analytics</div>
+                        <div class="flex items-end gap-2 h-16">
+                            <div class="w-full bg-gray-100 h-[40%] rounded-sm"></div>
+                            <div class="w-full bg-gray-200 h-[60%] rounded-sm"></div>
+                            <div class="w-full bg-brand-orange h-[100%] rounded-sm"></div>
+                            <div class="w-full bg-gray-100 h-[30%] rounded-sm"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute right-[15%] md:right-[18%] bottom-10 w-48 md:w-64 h-[180px] md:h-[240px] bg-white rounded-2xl shadow-xl border border-gray-50 transform rotate-3 z-20 flex flex-col p-4 hidden md:flex">
+                <div class="absolute -top-4 right-6 bg-[#FFF8EE] text-orange-700 text-[9px] font-bold px-3 py-1.5 rounded shadow-sm whitespace-nowrap text-center">Flexible plans built to<br>scale your leads</div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-gray-100 overflow-hidden border border-gray-200">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" class="w-full h-full object-cover" alt="User">
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-gray-900">David L.</div>
+                        <div class="text-[10px] text-gray-400">Developer</div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 flex-1 rounded-xl border border-gray-100 p-3 flex flex-col gap-2">
+                    <div class="text-sm font-bold text-gray-900 mb-1">$2,804.6</div>
+                    <div class="h-2 w-full bg-gray-200 rounded-full"></div>
+                    <div class="h-2 w-3/4 bg-gray-200 rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="absolute right-0 md:right-[2%] bottom-16 w-28 md:w-36 h-[200px] md:h-[260px] bg-white rounded-3xl shadow-xl border-[5px] border-white transform rotate-[10deg] z-10 overflow-hidden hidden sm:block">
+                <div class="w-full h-full bg-[#F4F7FB] p-3 flex flex-col items-center pt-6">
+                    <div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center mb-4 text-blue-500">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <div class="w-full h-2 bg-gray-200 rounded-full mb-2"></div>
+                    <div class="w-2/3 h-2 bg-gray-200 rounded-full mb-6"></div>
+                    <div class="w-full flex-1 bg-white rounded-t-xl shadow-sm"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-12 flex flex-wrap justify-center md:justify-between items-center gap-10 opacity-50 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-500 mb-12">
+        <div class="flex items-center gap-2 text-xl font-bold text-[#00D084]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg> moneyveo
+        </div>
+        <div class="flex items-center gap-1.5 text-xl font-black text-gray-900 tracking-tighter">
+            <div class="w-4 h-4 bg-brand-orange"></div> MONEY<span class="font-light text-brand-orange">Kit.</span>
+        </div>
+        <div class="flex items-center gap-2 text-xl font-bold text-[#00A3FF]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v6h-2V7zm0 8h2v2h-2v-2z"/></svg> laundryheap
+        </div>
+        <div class="flex items-center gap-2 text-xl font-semibold text-[#00B4D8] tracking-widest uppercase">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg> FINNEGANS
+        </div>
+    </section>
+
+    <section class="py-24 max-w-7xl mx-auto px-6 border-t border-gray-100">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8">
+            <div class="lg:col-span-3">
+                <div class="flex items-center gap-2 text-[10px] font-bold text-gray-900 uppercase tracking-widest">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-orange"></span> About
+                </div>
+            </div>
+            
+            <div class="lg:col-span-9">
+                <h2 class="text-2xl md:text-[32px] leading-[1.4] font-medium text-gray-900 mb-10 max-w-4xl">
+                    We're a digital product design and development agency crafting expressive websites, apps, and brands. With a streamlined process and passionate team, we turn ideas into lasting, high-quality digital products.
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-10 text-[13px] text-gray-500 leading-relaxed mb-16 max-w-3xl">
+                    <p>With a combined experience of 50+ years in the industry, our team of senior developers specializes in tackling complex technical things across web, mobile.</p>
+                    <p>Beyond solving immediate problems, we architect solutions with scalability in mind. We help future-proof your digital assets for sustainable growth and easy maintenance.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t border-gray-100">
+                    <div>
+                        <div class="text-4xl md:text-5xl font-medium text-gray-900 mb-3 tracking-tight">500+</div>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase tracking-[0.15em] leading-relaxed">Successful Projects<br>Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-medium text-gray-900 mb-3 tracking-tight">98%</div>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase tracking-[0.15em] leading-relaxed">Clients Achieve Their<br>Technical Goals</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-medium text-gray-900 mb-3 tracking-tight">$2M+</div>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase tracking-[0.15em] leading-relaxed">Saved In Potential<br>Technical Debt</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-medium text-gray-900 mb-3 tracking-tight">15+</div>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase tracking-[0.15em] leading-relaxed">Years Of Combined<br>Expertise</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full mb-24">
+        <div class="w-full bg-gradient-to-r from-[#FF822E] via-[#FF6200] to-[#E65800] py-24 md:py-32 px-6 text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-white/5 backdrop-blur-xl mix-blend-overlay"></div>
+            <h2 class="text-3xl md:text-5xl lg:text-[54px] font-medium text-white leading-[1.15] max-w-4xl mx-auto relative z-10 tracking-tight">
+                We're proudly serving 12 years in the industry. We have experience resources and top experts.
+            </h2>
+        </div>
+    </section>
+
+    <section class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex items-center gap-2 text-[10px] font-bold text-gray-900 uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-orange"></span> Our Services
+        </div>
+        
+        <h2 class="text-4xl md:text-[52px] font-medium text-gray-900 mb-16 leading-[1.1] tracking-tight max-w-md">
+            Level up your development game
+        </h2>
+
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+            
+            <div class="lg:col-span-5 flex flex-col gap-2">
+                
+                <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-[0_12px_40px_rgba(0,0,0,0.06)] relative overflow-hidden">
+                    <div class="absolute left-0 top-0 bottom-0 w-[5px] bg-brand-orange"></div>
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-10 h-10 rounded-xl bg-orange-50 text-brand-orange flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Emergency Bug Fixing</h3>
+                    </div>
+                    <p class="text-[13px] text-gray-500 mb-6 leading-relaxed pr-4">
+                        24/7 critical bug resolution for production issues, with guaranteed SLAs. We diagnose, patch, and document fixes to prevent recurrence.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-[13px] font-medium text-gray-700">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> Same-day solutions for crashing bugs
+                        </li>
+                        <li class="flex items-center gap-3 text-[13px] font-medium text-gray-700">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> Senior devs only (no juniors)
+                        </li>
+                        <li class="flex items-center gap-3 text-[13px] font-medium text-gray-700">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> Root-cause analysis included
+                        </li>
+                        <li class="flex items-center gap-3 text-[13px] font-medium text-gray-700">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> Priority SLA options (1-hour response)
+                        </li>
+                        <li class="flex items-center gap-3 text-[13px] font-medium text-gray-700">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> Code comments for future maintenance
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="group bg-transparent hover:bg-gray-50 border border-transparent hover:border-gray-100 rounded-[1.5rem] p-5 flex items-center gap-4 cursor-pointer transition-all mt-2">
+                    <div class="w-10 h-10 rounded-xl bg-white text-brand-orange shadow-sm border border-gray-100 flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                    </div>
+                    <h3 class="text-[17px] font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">1:1 Developer Mentorship</h3>
+                </div>
+                <div class="group bg-transparent hover:bg-gray-50 border border-transparent hover:border-gray-100 rounded-[1.5rem] p-5 flex items-center gap-4 cursor-pointer transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-white text-brand-orange shadow-sm border border-gray-100 flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                    </div>
+                    <h3 class="text-[17px] font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Code Review & Optimization</h3>
+                </div>
+                <div class="group bg-transparent hover:bg-gray-50 border border-transparent hover:border-gray-100 rounded-[1.5rem] p-5 flex items-center gap-4 cursor-pointer transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-white text-brand-orange shadow-sm border border-gray-100 flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                    </div>
+                    <h3 class="text-[17px] font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">Legacy System Modernization</h3>
+                </div>
+                <div class="group bg-transparent hover:bg-gray-50 border border-transparent hover:border-gray-100 rounded-[1.5rem] p-5 flex items-center gap-4 cursor-pointer transition-all">
+                    <div class="w-10 h-10 rounded-xl bg-white text-brand-orange shadow-sm border border-gray-100 flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+                    </div>
+                    <h3 class="text-[17px] font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">On-Demand Feature Development</h3>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-[#E8E4E1] rounded-[2.5rem] p-8 md:p-14 relative overflow-hidden min-h-[500px] flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-tr from-white/20 to-orange-400/20 mix-blend-overlay"></div>
+                <div class="absolute bottom-0 w-full h-[40%] bg-gradient-to-t from-orange-300/40 to-transparent"></div>
+                
+                <div class="bg-white/95 backdrop-blur-sm w-full max-w-[420px] rounded-3xl p-8 shadow-2xl relative z-10 border border-white/50">
+                    <h4 class="text-center font-bold text-gray-900 mb-8 text-[15px]">Emergency Bug Fixing</h4>
+                    
+                    <div class="relative h-44 w-full flex items-end border-b border-l border-gray-200 pb-2 pl-3 ml-4">
+                        <div class="absolute -left-8 top-0 h-full flex flex-col justify-between text-[10px] text-gray-400 font-medium py-1">
+                            <span>20k</span><span>15k</span><span>10k</span><span>5k</span><span>0</span>
+                        </div>
+                        
+                        <div class="absolute inset-0 bottom-2 left-3 right-0 overflow-visible">
+                            <svg viewBox="0 0 100 50" class="w-full h-full preserve-aspect-ratio-none">
+                                <path d="M0,45 C15,25 25,40 35,15 C45,-5 55,35 65,10 C75,25 85,5 100,20" fill="none" stroke="#FF6200" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0,45 C15,25 25,40 35,15 C45,-5 55,35 65,10 C75,25 85,5 100,20 L100,50 L0,50 Z" fill="rgba(255, 98, 0, 0.1)" stroke="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between mt-3 text-[10px] text-gray-400 font-medium ml-4 pl-3">
+                        <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-24 max-w-7xl mx-auto px-6 border-t border-gray-100 text-center">
+        
+        <div class="inline-flex items-center gap-2 text-[10px] font-bold text-gray-900 uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-orange"></span> Why Choose Us
+        </div>
+        <h2 class="text-4xl md:text-[52px] font-medium text-gray-900 leading-[1.1] max-w-xl mx-auto tracking-tight mb-20">
+            Expertise that makes<br>the difference
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            
+            <div class="flex flex-col gap-6">
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-brand-orange flex items-center justify-center mb-6 font-bold text-xl">
+                        &lt;/&gt;
+                    </div>
+                    <h3 class="text-[19px] font-bold text-gray-900 mb-3">Senior Devs Only</h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed font-medium">No juniors — just 5+ year experts in your stack.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-brand-orange flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-[19px] font-bold text-gray-900 mb-3">Fix It in Hours</h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed font-medium">Guaranteed same-day resolution with our 24/7 emergency response team.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6 md:mt-12 md:-mb-12">
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-brand-orange flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="text-[19px] font-bold text-gray-900 mb-3">Battle-Tested Expertise</h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed font-medium">Proven solutions refined across 10,000+ real-world cases since in 2018.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-brand-orange flex items-center justify-center mb-6 text-2xl font-bold">
+                        %
+                    </div>
+                    <h3 class="text-[19px] font-bold text-gray-900 mb-3">Zero Guesswork Pricing</h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed font-medium">Transparent flat-rate or hourly billing with ROI projections before any work begins.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6 md:-mt-6 md:mb-6">
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-brand-orange flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                    </div>
+                    <h3 class="text-[19px] font-bold text-gray-900 mb-3">24/7 Safety Net</h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed font-medium">Production emergencies don't wait for business hours, with night/weekend support.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-brand-orange flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-[19px] font-bold text-gray-900 mb-3">Always Scaling Architecture</h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed font-medium">We build systems to handle 10X growth without costly re-engineering.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mb-24">
+        <div class="bg-brand-light rounded-[3rem] p-10 md:p-16 grid lg:grid-cols-2 gap-16 items-center border border-gray-50">
+            
+            <div>
+                <div class="flex items-center gap-2 text-[10px] font-bold text-gray-900 uppercase tracking-widest mb-6">
+                    <span class="text-brand-orange text-lg leading-none">★</span> Testimonial
+                </div>
+                
+                <h2 class="text-4xl md:text-5xl font-medium text-gray-900 mb-6 tracking-tight">Praise from the trenches</h2>
+                <p class="text-gray-500 text-[13px] font-medium leading-relaxed mb-12 max-w-sm">
+                    See how we've helped teams ship faster, debug smarter, and scale confidently—straight from those who've partnered with us.
+                </p>
+                
+                <p class="text-xl md:text-[22px] font-medium leading-[1.5] text-gray-900 font-serif italic mb-10 pr-6">
+                    "As a non-technical founder, I relied on Devorion to audit our inherited codebase. Their 50-<span class="text-gray-400 font-sans font-normal not-italic">point assessment uncovered critical security flaws and performance bottlenecks. Their team not only fixed the issues but </span>taught our developers how to maintain quality moving forward."
+                </p>
+                
+                <div class="flex gap-3">
+                    <button class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-gray-900 transition-colors bg-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                    </button>
+                    <button class="w-12 h-12 rounded-full border border-brand-orange bg-white text-brand-orange flex items-center justify-center hover:bg-orange-50 transition-colors shadow-sm">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row gap-6 h-[400px]">
+                
+                <div class="w-full sm:w-[55%] h-full rounded-[2rem] overflow-hidden relative shadow-md bg-[#A5B3C2]">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover mix-blend-multiply opacity-90" alt="James M">
+                    <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-gray-900/90 to-transparent flex justify-between items-end">
+                        <div class="text-white">
+                            <div class="font-medium text-[17px]">James M</div>
+                            <div class="text-[11px] text-white/80 font-medium">Compliance Lead</div>
+                        </div>
+                        <div class="text-white/90 font-bold tracking-widest text-[9px] uppercase flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            FINTRUST
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-[45%] bg-[#F7F5F0] rounded-[2rem] p-8 flex flex-col justify-between shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-brand-orange text-xl">
+                        🏆
+                    </div>
+                    <div>
+                        <div class="text-[64px] font-medium text-gray-900 leading-none mb-3 tracking-tighter">95%</div>
+                        <p class="text-[11px] text-gray-600 leading-relaxed font-medium pr-2">Compliance teams love the intuitive interface, fast setup, and reliable performance.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 relative overflow-hidden flex flex-col items-center justify-center min-h-[700px]">
+        <div class="absolute inset-0 max-w-6xl mx-auto pointer-events-none hidden md:block">
+            <div class="absolute top-16 left-[15%] w-32 h-24 rounded-2xl overflow-hidden shadow-xl transform -rotate-[10deg] border-[4px] border-white">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&auto=format&fit=crop" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute top-24 right-[20%] w-24 h-24 rounded-[1.5rem] overflow-hidden shadow-xl transform rotate-12 border-[4px] border-white">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=300&auto=format&fit=crop" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute bottom-20 left-[20%] w-36 h-36 rounded-[2rem] overflow-hidden shadow-xl transform rotate-6 bg-white p-1 border-[4px] border-white">
+                <img src="assets/footer-03.png" class="w-full h-full object-cover rounded-2xl">
+            </div>
+            <div class="absolute top-[40%] left-[5%] w-40 bg-white p-3 rounded-2xl shadow-xl transform -rotate-6 border border-gray-100 flex flex-col gap-2">
+                <div class="w-full h-2 bg-gray-100 rounded-full"></div>
+                <div class="w-2/3 h-2 bg-gray-100 rounded-full"></div>
+                <div class="w-full h-8 bg-gray-50 rounded mt-1 border border-gray-100"></div>
+            </div>
+            <div class="absolute bottom-24 right-[15%] w-44 bg-white p-2.5 rounded-[1.5rem] shadow-xl transform -rotate-3 border border-gray-100">
+                <div class="h-20 w-full bg-gradient-to-br from-[#E2F1F8] to-[#CFE5F5] rounded-xl mb-3 relative overflow-hidden flex items-end p-2 border border-blue-100">
+                    <div class="text-[9px] font-bold text-gray-800 bg-white/80 px-1.5 py-0.5 rounded shadow-sm">Wind Dancer</div>
+                </div>
+                <div class="flex justify-between items-end px-1 pb-1">
+                    <div class="text-xs font-bold text-gray-900">€2,600</div>
+                    <div class="w-12 h-2 bg-[#FF6B00] rounded-full"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative z-10 text-center bg-white/70 backdrop-blur-md p-10 rounded-3xl max-w-xl">
+            <h2 class="text-4xl md:text-[52px] font-medium text-gray-900 mb-6 leading-[1.1] tracking-tight">
+                Ready to take your<br>product next label?
+            </h2>
+            <p class="text-[13px] text-gray-500 font-medium mb-10 max-w-[300px] mx-auto leading-relaxed">
+                We're here to help to solve your product problems and improve your business revenue.
+            </p>
+            <a href="#" class="inline-block bg-brand-orange text-white px-8 py-4 rounded-full text-sm font-semibold shadow-[0_8px_20px_rgba(255,98,0,0.3)] hover:bg-[#e65800] transition-colors">
+                Schedule for a Free Call
+            </a>
+        </div>
+    </section>
+
+    <section class="relative bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-16 lg:gap-24 relative z-10">
+            
+            <div>
+                <h2 class="text-4xl md:text-[60px] font-medium text-gray-900 leading-[1.05] tracking-tight mb-16">
+                    Ready to grow your<br>business? <span class="font-serif italic font-normal text-gray-500">Let's get started</span>
+                </h2>
+                
+                <div class="space-y-8">
+                    <div>
+                        <div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Get in Touch</div>
+                        <a href="mailto:hello@stallion.com" class="text-lg font-medium text-gray-900 hover:text-brand-orange border-b border-gray-300 hover:border-brand-orange pb-1 transition-colors inline-block cursor-pointer">hello@stallion.com</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <a href="tel:+14408407532" class="text-[13px] font-semibold text-gray-600 underline underline-offset-4 decoration-gray-300 hover:text-brand-orange hover:decoration-brand-orange transition-colors w-max cursor-pointer">+1 440-840-7532</a>
+                        <a href="tel:+14497353224" class="text-[13px] font-semibold text-gray-600 underline underline-offset-4 decoration-gray-300 hover:text-brand-orange hover:decoration-brand-orange transition-colors w-max cursor-pointer">+1 449-735-3224</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-2">
+                <form class="space-y-4 max-w-md ml-auto">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name" class="w-full px-6 py-[18px] rounded-[14px] border border-gray-200 text-[13px] font-medium focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-colors placeholder:text-gray-400">
+                        <input type="text" placeholder="Last Name" class="w-full px-6 py-[18px] rounded-[14px] border border-gray-200 text-[13px] font-medium focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-colors placeholder:text-gray-400">
+                    </div>
+                    <input type="email" placeholder="Email" class="w-full px-6 py-[18px] rounded-[14px] border border-gray-200 text-[13px] font-medium focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-colors placeholder:text-gray-400">
+                    <textarea placeholder="Message..." rows="4" class="w-full px-6 py-[18px] rounded-[14px] border border-gray-200 text-[13px] font-medium focus:outline-none focus:border-brand-orange focus:ring-1 focus:ring-brand-orange transition-colors resize-none placeholder:text-gray-400"></textarea>
+                    
+                    <button type="submit" class="w-full bg-brand-orange text-white py-[18px] rounded-[14px] text-sm font-semibold hover:bg-[#e65800] transition-colors shadow-[0_8px_20px_rgba(255,98,0,0.3)] mt-2 cursor-pointer">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="relative mx-4 mb-4 h-[400px] md:h-[550px] rounded-[2.5rem] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover object-bottom" alt="Flower Field">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <h1 class="text-[22vw] font-serif italic font-bold text-white/95 leading-none tracking-tighter mix-blend-overlay drop-shadow-xl text-center select-none">
+                    Stallion
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-8 px-6 relative z-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs font-semibold text-gray-400 uppercase gap-6">
+            
+            <div class="flex flex-wrap justify-center md:justify-start items-center gap-6">
+                <span class="text-gray-900 capitalize tracking-normal text-sm font-bold">Company</span>
+                <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer">Services</a>
+                <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer">Why Stallion?</a>
+                <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer">About Stallion</a>
+                <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer">Careers</a>
+                <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer">Resources</a>
+                <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer">Case Studies</a>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="flex gap-5 text-gray-500">
+                    <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer" aria-label="Twitter"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                    <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer" aria-label="Instagram"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer" aria-label="LinkedIn"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="normal-case tracking-normal">© 2025 Stallion. All rights reserved.</span>
+                    <div class="flex gap-4 border-l border-gray-200 pl-4 normal-case tracking-normal">
+                        <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer">Privacy Policy</a>
+                        <a href="#" class="hover:text-gray-900 transition-colors cursor-pointer">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
