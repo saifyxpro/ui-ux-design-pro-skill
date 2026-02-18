@@ -139,3 +139,5 @@ No,UI_Category,Recommended_Pattern,Style_Priority,Color_Mood,Typography_Mood,Key
 57,Fintech Pro,Fintech Holo-Ledger,High,Dark/Glass,Mono/Num,Table rows; Blur backdrops,Context_Industry == 'Fintech' OR Context_Type == 'Trading',Opaque tables; White backgrounds; Serif fonts,Medium
 58,Gaming Hub,Gaming Vortex Realms,Medium,Dark/Vivid,Display/Gaming,Particle backgrounds; Hover-zoom,Context_Industry == 'Gaming',Corporate blues; Standard bootstrap; Flat white,Low
 59,Future Commerce,Immersive 3D Realm,High,Clean/Focus,Modern,3D Product Rotation,Context_Type == 'E-commerce' AND Context_Era == '2026',Static 2D images; Carousel sliders,Medium
+
+Button Border Radius,Modern SaaS / Fintech,"Use full rounded (pill) buttons for primary actions to distinguish them from content cards.","Small radius (4px-8px) on primary buttons in 'friendly' styles.","Pill shapes (`rounded-full`) feel more clickable and modern.",Tailwind (`rounded-full`)

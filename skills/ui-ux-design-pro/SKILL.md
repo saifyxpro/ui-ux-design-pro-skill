@@ -358,6 +358,7 @@ For direction selection guidance and complete example systems:
 | Fintech Pro              | Deep navy, gold, precise data  | Trading, Banking, Crypto           |
 | SaaS Launch              | Vibrant purple, clean, motion  | Marketing, Startups                |
 | Lime & Obsidian          | High contrast, neon, sharp     | DevTools, CLI, Terminal            |
+| Lime & Obsidian (User)   | Obsidian darks, Lime accents   | Modern SaaS, High Contrast Dashboards |
 
 ---
 
