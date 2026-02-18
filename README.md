@@ -29,7 +29,7 @@ A senior-level AI skill that provides data-driven design intelligence for buildi
 | Requirement | Version | Purpose                                            |
 | ----------- | ------- | -------------------------------------------------- |
 | **Bun**     | 1.0+    | Required runtime for the CLI and Orama search engine |
-| **Node.js** | 18+     | Compatible alternative (via `npm`/`tsx`)           |
+
 
 ### Install Bun
 
