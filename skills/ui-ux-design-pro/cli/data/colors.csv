@@ -127,4 +127,13 @@ No,Product Type,Primary (Hex),Secondary (Hex),CTA (Hex),Background (Hex),Text (H
 125,Environmental/Sustainability,#006400,#98FB98,#32CD32,#FAFAFA,#0F3D0F,#7CFC00,Natural deep/lime greens for sustainable professionalism
 126,Cybersecurity,#8B0000,#DC143C,#1E3A8A,#F8F9FA,#111827,#4B5563,Dark red/black with blue for fortified digital defense and security[1]
 127,AI Education Platform,#4F46E5,#6366F1,#4F46E5,#F8FAFC,#0F172A,#E2E8F0,Single-hue indigo system: indigo-600 primary CTAs + indigo-500 gradient midpoints + slate neutrals. Light-mode first. Gradient CTAs from-indigo-600 to-indigo-500. Premium shadow rgba(79 70 229 / 0.1)
-128,Crypto Hardware Wallet,#FF7F50,#2D2D2D,#FF7F50,#FFFFFF,#1A1A1A,#E5E5E5,Warm coral brand identity: coral #FF7F50 for CTAs and brand shadows. Warm neutral scale (not slate). Mesh gradient backgrounds with coral tints. Shadow-[#FF7F50]/30 for brand-tinted depth
+128,Crypto Hardware Wallet,#FF7F50,#2D2D2D,#FF7F50,#FFFFFF,#1A1A1A,#E5E5E5,Warm coral brand identity: coral #FF7F50 for CTAs and brand shadows. Warm neutral scale (not slate). Mesh gradient backgrounds with coral tints. Shadow-[#FF7F50]/30 for brand-tinted depth60,Biotech / Genomics,#008080;#e6f7ff;#ff007f,#ffffff;#111827;#e5e7eb,DNA Sequencing; Clean Lab aesthetics; Trust & Precision; Teal for health; Pink for biological markers
+61,Quantum Computing,#1a0b2e;#7000ff;#00ffff,#0b0c15;#ffffff;#2d2d2d,Qubit states; Superposition violets; Deep void blacks; Neon cyan interference patterns; High contrast
+62,Climate Tech / Sustainability,#2f855a;#f0fff4;#ecc94b;#ffffff;#1a202c;#c6f6d5,Solarpunk; Nature-tech; Emerald greens; Solar yellows; Clean air whites; Organic feel without being rustic
+63,Autonomous Systems / Robotics,#ff4500;#1a1a1a;#3b82f6;#f3f4f6;#000000;#d1d5db,Industrial safety orange; Machine vision blue; Steel greys; High visibility; Warning & Action zones
+64,Brain-Computer Interface (BCI),#6366f1;#e0e7ff;#f59e0b;#0f172a;#f8fafc;#334155,Neural activity; Synapse gold; Cerebral indigo; Deep focus dark mode; Calm but alert
+65,Space Tech / Aerospace,#0B3D91;#FFFFFF;#D12229;#000000;#F5F5F7;#333333,NASA Blue; Mars Red accent; Starfield Black; International Space Station White; High reliability
+66,Cybersecurity / InfoSec,#00FF00;#000000;#FF0000;#0A0A0A;#E5E5E5;#333333,Matrix Green; Threat Red; Terminal Black; Stealth Mode; High contrast terminal aesthetics
+67,Legal Tech / Compliance,#1e293b;#cbd5e1;#d97706;#ffffff;#0f172a;#e2e8f0,Slate Blue authority; Amber warnings; Clean document white; Serif typography compatibility
+68,EdTech / Learning,#6d28d9;#ede9fe;#f59e0b;#ffffff;#1f2937;#ddd6fe,Deep Purple (Wisdom); Playful Yellow (Engagement); Soft Lavender backgrounds; Accessible contrast
+69,AgriTech / Precision Farming,#3f6212;#ecfccb;#3b82f6;#ffffff;#1a202c;#d9f99d,Growth Green; Sky Blue; Earth Brown hints; Data-driven nature; High visibility outdoor mode
