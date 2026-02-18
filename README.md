@@ -25,6 +25,10 @@ A senior-level AI skill that provides data-driven design intelligence for buildi
 - **Unified CLI** — Search, audit, icons, and generation tools in a single TypeScript application
 - **11 Reference Docs** — Intent-first design methodology
 
+## Recommended Models
+
+For best results, use **GPT-5.3 Codex xhigh** or **Gemini 3.0 Pro**.
+
 ## Prerequisites
 
 | Requirement | Version | Purpose                                            |

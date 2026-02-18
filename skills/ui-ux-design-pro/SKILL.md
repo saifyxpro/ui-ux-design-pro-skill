@@ -12,6 +12,12 @@ description: >
 
 # UI/UX Design Pro
 
+## Recommended Models
+For best results, use **GPT-5.3 Codex** or **Gemini 3.0 Pro**.
+
+## Default Settings
+- **Theme**: Always prefer **Light Mode** by default. Only use Dark Mode if explicitly requested by the user.
+
 Build every interface with senior-level craft, intent, and consistency. Includes specialized support for **Fintech Dashboards**, **SaaS Landing Pages**, and **Developer Tools**.
 
 ## Scope
