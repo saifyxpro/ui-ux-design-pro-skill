@@ -2,10 +2,10 @@
 
 # 🎨 UI/UX Design Pro Skill (2026 Edition)
 
-![131 Reasoning Rules](https://img.shields.io/badge/reasoning_rules-131-green?style=for-the-badge)
-![107 UI Styles](https://img.shields.io/badge/UI_styles-107-purple?style=for-the-badge)
-![107 Font Pairings](https://img.shields.io/badge/font_pairings-107-blue?style=for-the-badge)
-![127 Color Palettes](https://img.shields.io/badge/color_palettes-127-orange?style=for-the-badge)
+![150+ Reasoning Rules](https://img.shields.io/badge/reasoning_rules-150+-green?style=for-the-badge)
+![107+ UI Styles](https://img.shields.io/badge/UI_styles-107+-purple?style=for-the-badge)
+![107+ Font Pairings](https://img.shields.io/badge/font_pairings-107+-blue?style=for-the-badge)
+![127+ Color Palettes](https://img.shields.io/badge/color_palettes-127+-orange?style=for-the-badge)
 ![16 Tech Stacks](https://img.shields.io/badge/tech_stacks-16-red?style=for-the-badge)
 ![Runtime: Bun](https://img.shields.io/badge/runtime-Bun-black?style=for-the-badge&logo=bun&logoColor=white)
 [![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
@@ -14,12 +14,13 @@ A senior-level AI skill that provides data-driven design intelligence for buildi
 
 ## Highlights
 
-- **107 UI Styles** — Glassmorphism, Liquid Glass, Data Brutalism, Spatial UI, Cyberpunk, AI-Native, and 100+ more
+- **107+ UI Styles** — Glassmorphism, Liquid Glass, Data Brutalism, Spatial UI, Cyberpunk, AI-Native, and 100+ more
 - **Architectural Palettes** — 11-step (50-950) color scales with semantic variations (Neutral, Success, Warning, Error)
-- **107 Font Pairings** — Curated typography combinations with Google Fonts imports and mood keywords
-- **127 Color Palettes** — Industry-specific palettes for SaaS, Fintech, Healthcare, E-commerce, Beauty, and more
-- **131 Reasoning Rules** — Industry-specific design system generation with anti-patterns
-- **129 UX Guidelines** — Best practices covering accessibility, animation, forms, and more
+- **107+ Font Pairings** — Curated typography combinations with Google Fonts imports and mood keywords
+- **127+ Color Palettes** — Industry-specific palettes for SaaS, Fintech, Healthcare, E-commerce, Beauty, and more
+- **150+ Reasoning Rules** — Industry-specific design system generation with anti-patterns
+- **150+ UX Guidelines** — Best practices covering accessibility, animation, forms, and more
+- **Developer-Ready Output** — Generates React/Tailwind code snippets and WCAG accessibility notes
 - **16 Tech Stacks** — React, Next.js, Vue, Nuxt.js, Angular, Remix, SolidJS, Svelte, Astro, and more
 - **Unified CLI** — Search, audit, icons, and generation tools in a single TypeScript application
 - **11 Reference Docs** — Intent-first design methodology
@@ -76,11 +77,29 @@ See the difference the skill makes — same prompt, with and without UI/UX Desig
 
 Generated in a single prompt using the skill's design system CLI + "Warmth & Approachability" direction:
 
+<details>
+<summary><b>View Generated Result (One-Shot)</b></summary>
+
 ![AgentFlow - Warm Creative SaaS Landing](examples/example-02/Agent-flow.png)
 
 > **Prompt:** _"Generate a Warm Creative SaaS landing page using the design CLI"_
 >
 > **Design Direction:** Warmth & Approachability · **Primary:** `#FF6B35` (Coral) · **Fonts:** Fraunces + Plus Jakarta Sans · **Radius:** 24-32px
+
+</details>
+
+### Finance Command Center (Example 03)
+
+<details>
+<summary><b>View Generated Result</b></summary>
+
+![Finance Command Center](examples/example-03/Example-03.png)
+
+> **Prompt:** _"Generate a Finance Command Center dashboard"_
+>
+> **Design Direction:** Precision & Density · **Primary:** `#C2E045` (Lime) · **Font:** Inter · **Radius:** 16-24px
+
+</details>
 
 ## Features
 
@@ -89,28 +108,38 @@ Generated in a single prompt using the skill's design system CLI + "Warmth & App
 The flagship feature is the **Design System Generator** — an AI-powered reasoning engine that analyzes your project requirements and generates a complete, tailored design system in **Beautiful Markdown**.
 
 ```markdown
-# Design System: Data Brutalism
+# Design System: SaaS Launch
 
-> **Query**: "Fintech Dashboard" | **Tech Stack**: Next.js | **Generated**: 2/18/2026
+> **Query**: "Modern SaaS Platform" | **Tech Stack**: Next.js | **Generated**: 2/18/2026
 
 ## 1. Brand Identity
-- **Primary Color**: `#1E40AF` (Royal Blue)
-- **Typography**: **Fira Code** (Headings & Body)
+- **Primary Color**: `#7C3AED` (Violet)
+- **Typography**: **Inter** (Headings & Body)
 
-## 2. Color System
-Architectural palettes designed for flexibility and accessibility (50-950 scale).
+## 2. Component Library
 
-### Primary Brand
-| Stop | Hex | Preview |
-| :--- | :--- | :--- |
-| **50** | `#EFF6FF` | ... |
-| ...  | ...       | ... |
-| **500** | `#1E40AF` | ... |
-| ...  | ...       | ... |
-| **950** | `#172554` | ... |
+### Primary Button
+**Usage:** Main call-to-action actions
+**Variants:** Default, Hover, Active, Disabled
+**CSS Variable:** `--radius-md`
 
-### Semantic Colors
-(Auto-generated Success, Warning, Error, Neutral palettes)
+> [!TIP]
+> **Best Practice**: Use only one primary button per screen to maintain clear hierarchy.
+
+> [!NOTE]
+> **Accessibility**: Ensure 4.5:1 contrast. Use `aria-label` if icon-only.
+
+```tsx
+<button className="bg-violet-600 hover:bg-violet-700 text-white px-6 py-2 rounded-lg font-medium transition-colors focus:ring-2 focus:ring-violet-300">
+  Get Started
+</button>
+```
+
+### Hero Section
+**Usage:** Top of landing page
+**Variants:** Centered, Split, With Image
+
+> **Description**: A high-conversion hero with clear value proposition and social proof.
 ```
 
 ### How It Works

@@ -19,7 +19,7 @@ const DATA_DIR = join(import.meta.dir, '../data');
 
 // Map CSV filenames to their "primary key" column for the title
 const TITLE_KEYS: Record<string, string[]> = {
-  'styles.csv': ['Style', 'Name'],
+  'styles.csv': ['Style Category', 'Style', 'Name'],
   'colors.csv': ['Industry', 'Palette'],
   'icons.csv': ['Name', 'Library'],
   'icon-libraries.csv': ['name'],
@@ -27,6 +27,7 @@ const TITLE_KEYS: Record<string, string[]> = {
   'ux-guidelines.csv': ['Issue', 'Category'],
   'typography.csv': ['Pairing', 'Font'],
   'ai-hallucinations.csv': ['Error_Name', 'Category'],
+  'components.csv': ['Name', 'Category'],
 };
 
 // Global index singleton

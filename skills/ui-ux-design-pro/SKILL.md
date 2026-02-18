@@ -7,12 +7,12 @@ description: >
   2. Generate comprehensive design systems (tokens, palettes, typography)
   3. Audit existing UI for quality, accessibility, and "craft"
   4. Search for proven real-world design patterns and implementation details
-  Trigger: "design a...", "audit this...", "create a design system", "find icons"
+  Trigger: "design a...", "audit this...", "create a design system", "find icons", "fintech dashboard", "landing page"
 ---
 
 # UI/UX Design Pro
 
-Build every interface with senior-level craft, intent, and consistency.
+Build every interface with senior-level craft, intent, and consistency. Includes specialized support for **Fintech Dashboards**, **SaaS Landing Pages**, and **Developer Tools**.
 
 ## Scope
 
@@ -349,6 +349,9 @@ For direction selection guidance and complete example systems:
 | Data & Analysis          | Chart-optimized, numbers-first | Analytics, BI tools                |
 | Playful & Expressive     | Rounded, colorful, animated    | Creative tools, portfolio          |
 | Warm Premium Identity    | Coral warmth, large radius     | Hardware, crypto, premium consumer |
+| Fintech Pro              | Deep navy, gold, precise data  | Trading, Banking, Crypto           |
+| SaaS Launch              | Vibrant purple, clean, motion  | Marketing, Startups                |
+| Lime & Obsidian          | High contrast, neon, sharp     | DevTools, CLI, Terminal            |
 
 ---
 
@@ -427,6 +430,7 @@ This produces a structured Markdown file containing:
 - **Type scale** — Modular scale with `px` and `rem` values
 - **Reasoning rules** — industry-specific do/don't patterns
 - **UX guidelines** — relevant accessibility and interaction guidance
+- **Component Library** — Production-ready Code Snippets (React/Tailwind), Accessibility Roles, and Best Practices
 
 Use the generated Markdown as your single source of truth when building components. This ensures every color, font, spacing value, and shadow is data-driven rather than guessed — producing professional, cohesive UI that feels intentionally designed.
 

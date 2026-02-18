@@ -1,13 +1,14 @@
 {
   "name": "design-pro",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "module": "index.ts",
   "type": "module",
   "bin": {
     "design-pro": "./index.ts"
   },
   "scripts": {
-    "start": "bun run index.ts"
+    "start": "bun run index.ts",
+    "generate": "bun run index.ts generate"
   },
   "devDependencies": {
     "@types/bun": "latest"
