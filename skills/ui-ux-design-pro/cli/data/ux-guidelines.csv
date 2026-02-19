@@ -131,3 +131,7 @@ No,Category,Issue,Platform,Description,Do,Don't,Code Example Good,Code Example B
 131,Dashboard,Empty States,All,New users drop off if dashboard is blank,Show "Create New" CTA and educational illustration,Blank page with "No Data",<EmptyState title="Create link" />,<div>Nothing here</div>,High
 132,Motion,Playful Micro-interactions,Web,Delightful details increase engagement,Use subtle "pop" or "twinkle" on success states,Static boring interactions,scale-[1.05] active:scale-95,No interaction feedback,Low
 133,Navigation,Sidebar Grouping,All,Long lists overwhelm users,Group related links under collapsible headers,Flat list of 20 links,<SidebarGroup title="Settings">,<nav>Link Link Link</nav>,Medium
+134,Copywriting,Brevity,All,Verbose labels increase cognitive load,Use single words (Voting) vs Sentences (Last 10 Votes),Multi-word labels,"<h5>Voting</h5>","<h5>Last 10 Votes by User</h5>",High
+135,Layout,8-Point Grid,All,Inconsistent spacing looks unprofessional,Multiples of 8px (8, 16, 24, 32) for padding/margin,Random numbers (11px, 25px),p-4 gap-4 (Tailwind uses 4px base),margin: 13px,Critical
+136,Input,Contextual Alerts,Finance,Forms need immediate context not just labels,Show "Fraud Alert" icon/banner inside context,Generic notification bell,<Alert variant="fraud">Transaction suspended</Alert>,<div class="toast">Info</div>,High
+137,Data Viz,Pie Chart Utility,Finance,Lists are bad for "part-to-whole" comparisons,Use Pie/Donut for Credit Limit vs Used,Table of percentages,<PieChart data={limit} />,<ul class="percentages">...</ul>,Medium
