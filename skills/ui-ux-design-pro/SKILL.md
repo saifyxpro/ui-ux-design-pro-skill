@@ -459,8 +459,8 @@ Use the generated Markdown as your single source of truth when building componen
 | `data/styles.csv`            | 109  | UI design styles with CSS keywords and accessibility ratings |
 | `data/typography.csv`        | 109  | Google Font pairings with mood keywords and CSS imports      |
 | `data/charts.csv`            | 106  | Data visualization types with library recommendations        |
-| `data/ui-reasoning.csv`      | 131  | Industry-specific UI reasoning rules with anti-patterns      |
-| `data/ux-guidelines.csv`     | 129  | UX guidelines with do/don't examples and code                |
+| `data/ui-reasoning.csv`      | 138  | Design rules (Color Layers, 60-30-10, Dark Mode Contrast)    |
+| `data/ux-guidelines.csv`     | 133  | UX guidelines (Optimistic UI, Empty States, Motion)          |
 | `data/colors.csv`            | 129  | Color palettes by industry with hex values                   |
 | `data/products.csv`          | 98   | Product-type design recommendations                          |
 | `data/icons.csv`             | 101  | Icon style guidelines                                        |
