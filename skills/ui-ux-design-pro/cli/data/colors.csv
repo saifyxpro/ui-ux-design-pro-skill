@@ -95,47 +95,46 @@ No,Product Type,Primary (Hex),Secondary (Hex),CTA (Hex),Background (Hex),Text (H
 94,Generative AI Art,#18181B,#3F3F46,#EC4899,#FAFAFA,#09090B,#E4E4E7,Canvas neutral + creative pink
 95,Spatial / Vision OS,#FFFFFF,#E5E5E5,#007AFF,#888888,#000000,#CCCCCC,Glass white + system blue
 96,Climate Tech,#059669,#10B981,#FBBF24,#ECFDF5,#064E3B,#A7F3D0,Nature green + solar gold
-
-97,Cryptocurrency/Blockchain,#F7931A,#4D4D4D,#F2A900,#FFFFFF,#4D4D4D,#3C3C3D,Bitcoin-inspired: vibrant orange for energy, dark neutrals for trust and professionalism[1][3][6]
+97,Cryptocurrency/Blockchain,#F7931A,#4D4D4D,#F2A900,#FFFFFF,#4D4D4D,#3C3C3D,"Bitcoin-inspired: vibrant orange for energy, dark neutrals for trust and professionalism[1][3][6]"
 98,Cryptocurrency/Blockchain,#F69C3D,#497493,#FC6621,#1A1A1A,#FFFFFF,#2D3357,Ethereum/BTC blend: warm oranges with cool blues for security and innovation[1][4]
 99,Cryptocurrency/Blockchain,#D44558,#9CC9FB,#20145B,#C8C0A0,#2D3357,#7983B9,Trend blockchain landing: red/blue accents for dynamic trust[2]
-100,Agriculture/AgTech,#4A7C59,#D8E4C6,#7CB342,#F5F5F5,#2F4F2F,#8B9A46,Earthy greens for growth and sustainability, neutral background for professionalism
+100,Agriculture/AgTech,#4A7C59,#D8E4C6,#7CB342,#F5F5F5,#2F4F2F,#8B9A46,"Earthy greens for growth and sustainability, neutral background for professionalism"
 101,Agriculture/AgTech,#8B4513,#DEB887,#228B22,#FAF9F6,#3C2F2F,#A0522D,Warm soil tones with fresh green CTA for reliable farm tech trust
 102,Aerospace/Aviation,#003366,#B0C4DE,#4169E1,#F8F9FA,#1A252F,#708090,Deep navy primary with sky blues for precision and high-altitude professionalism
 103,Aerospace/Aviation,#1E3A8A,#87CEEB,#FF4500,#FFFFFF,#111827,#4682B4,Aviation blue with rocket orange CTA for innovation and safety
 104,Energy/Solar,#FFD700,#FFA500,#32CD32,#FFF8DC,#1A1A1A,#DAA520,Solar gold/yellows with green energy CTA for optimism and clean power professionalism
 105,Energy/Solar,#FF8C00,#90EE90,#FFFF00,#F0F8FF,#2F4F4F,#FF6347,Warm solar gradients for renewable trust and high-energy appeal
 106,Telecommunications,#0066CC,#00BFFF,#FF6600,#F8F9FA,#333333,#6699CC,Tech blue primary with cyan secondary for connectivity and reliable service
-107,Telecommunications,#1E40AF,#3B82F6,#EF4444,#FFFFFF,#111827,#6B7280,Modern signal blues with red urgency CTA for fast, secure networks
+107,Telecommunications,#1E40AF,#3B82F6,#EF4444,#FFFFFF,#111827,#6B7280,"Modern signal blues with red urgency CTA for fast, secure networks"
 108,Insurance,#2E5B92,#4682B4,#28A745,#F8F9FA,#2C3E50,#5A6C7D,Trustworthy navy blues with green CTA for security and protection
 109,Insurance,#34495E,#3498DB,#27AE60,#ECF0F1,#2C3E50,#7F8C8D,Professional grays/blues for stability and reassuring coverage
 110,Logistics/Shipping,#8B4513,#D2B48C,#FF8C00,#F5F5F5,#2F2F2F,#A0522D,Earthy browns with orange CTA for reliable global transport
-111,Logistics/Shipping,#36454F,#7D8A99,#F39C12,#FFFFFF,#1A1A1A,#BDC3C7,Industrial grays with amber for efficient, on-time delivery professionalism
+111,Logistics/Shipping,#36454F,#7D8A99,#F39C12,#FFFFFF,#1A1A1A,#BDC3C7,"Industrial grays with amber for efficient, on-time delivery professionalism"
 112,Automotive,#C0C0C0,#383838,#DC143C,#FAFAFA,#111111,#696969,Metallic silver/black with red speed CTA for premium vehicle trust
 113,Automotive,#1A1A1A,#FFD700,#4169E1,#F8F8F8,#FFFFFF,#4682B4,Sleek black with gold/luxury blue for high-performance engineering
-114,Real Estate Luxury,#8B0000,#DCDCDC,#FFD700,#F5F5F5,#2F1B14,#B8860B,Rich maroon/gold for opulent properties, conveying exclusivity
+114,Real Estate Luxury,#8B0000,#DCDCDC,#FFD700,#F5F5F5,#2F1B14,#B8860B,"Rich maroon/gold for opulent properties, conveying exclusivity"
 115,Real Estate Luxury,#2C1810,#C9A96E,#D4AF37,#FDF6EC,#1A0D05,#8B7355,Warm taupe palette with metallic gold for sophisticated home luxury
 116,Gaming/eSports,#FF4500,#00FF00,#9400D3,#121212,#FFFFFF,#FF1493,Vibrant neon red/green/purple for high-energy competitive edge
 117,Gaming/eSports,#00BFFF,#FF00FF,#FFD700,#0F0F0F,#E0E0E0,#4169E1,Cyber neon blues/pinks/gold for immersive esports professionalism
-118,Wedding/Events,#F8C8DC,#FFF8E7,#FF69B4,#FFFFFF,#4A2C2A,#DDA0DD,Soft pastels with blush CTA for romantic, elegant celebrations
+118,Wedding/Events,#F8C8DC,#FFF8E7,#FF69B4,#FFFFFF,#4A2C2A,#DDA0DD,"Soft pastels with blush CTA for romantic, elegant celebrations"
 119,Wedding/Events,#E8F4FD,#FFF2CC,#FFB6C1,#FAF9F6,#5D4037,#F0E68C,Ivory/champagne tones for timeless luxury events
 120,Pet Care,#FF9899,#A8D5BA,#4CAF50,#F9F9F9,#2E4F4F,#8D6E63,Warm caring pinks/greens for friendly pet wellness trust
-121,Pet Care,#8B4513,#98D8C8,#FFEB3B,#FFFDF5,#4A4A4A,#689F38,Earthy/playful with yellow CTA for fun, dependable pet care
+121,Pet Care,#8B4513,#98D8C8,#FFEB3B,#FFFDF5,#4A4A4A,#689F38,"Earthy/playful with yellow CTA for fun, dependable pet care"
 122,Music/Audio,#1DB954,#191414,#FF5851,#FFFFFF,#000000,#FB881D,Spotify-inspired green/black with vibrant CTAs for dynamic audio energy
 123,Music/Audio,#2E8B57,#4682B4,#FF4500,#F0F8FF,#1E1E1E,#FF6347,Soundwave teal/blue with fiery accents for professional music vibes
 124,Environmental/Sustainability,#228B22,#90EE90,#FFD700,#F0FFF0,#006400,#ADFF2F,Forest greens with gold for eco-trust and growth
 125,Environmental/Sustainability,#006400,#98FB98,#32CD32,#FAFAFA,#0F3D0F,#7CFC00,Natural deep/lime greens for sustainable professionalism
 126,Cybersecurity,#8B0000,#DC143C,#1E3A8A,#F8F9FA,#111827,#4B5563,Dark red/black with blue for fortified digital defense and security[1]
 127,AI Education Platform,#4F46E5,#6366F1,#4F46E5,#F8FAFC,#0F172A,#E2E8F0,Single-hue indigo system: indigo-600 primary CTAs + indigo-500 gradient midpoints + slate neutrals. Light-mode first. Gradient CTAs from-indigo-600 to-indigo-500. Premium shadow rgba(79 70 229 / 0.1)
-128,Crypto Hardware Wallet,#FF7F50,#2D2D2D,#FF7F50,#FFFFFF,#1A1A1A,#E5E5E5,Warm coral brand identity: coral #FF7F50 for CTAs and brand shadows. Warm neutral scale (not slate). Mesh gradient backgrounds with coral tints. Shadow-[#FF7F50]/30 for brand-tinted depth60,Biotech / Genomics,#008080;#e6f7ff;#ff007f,#ffffff;#111827;#e5e7eb,DNA Sequencing; Clean Lab aesthetics; Trust & Precision; Teal for health; Pink for biological markers
-61,Quantum Computing,#1a0b2e;#7000ff;#00ffff,#0b0c15;#ffffff;#2d2d2d,Qubit states; Superposition violets; Deep void blacks; Neon cyan interference patterns; High contrast
-62,Climate Tech / Sustainability,#2f855a;#f0fff4;#ecc94b;#ffffff;#1a202c;#c6f6d5,Solarpunk; Nature-tech; Emerald greens; Solar yellows; Clean air whites; Organic feel without being rustic
-63,Autonomous Systems / Robotics,#ff4500;#1a1a1a;#3b82f6;#f3f4f6;#000000;#d1d5db,Industrial safety orange; Machine vision blue; Steel greys; High visibility; Warning & Action zones
-64,Brain-Computer Interface (BCI),#6366f1;#e0e7ff;#f59e0b;#0f172a;#f8fafc;#334155,Neural activity; Synapse gold; Cerebral indigo; Deep focus dark mode; Calm but alert
-65,Space Tech / Aerospace,#0B3D91;#FFFFFF;#D12229;#000000;#F5F5F7;#333333,NASA Blue; Mars Red accent; Starfield Black; International Space Station White; High reliability
-66,Cybersecurity / InfoSec,#00FF00;#000000;#FF0000;#0A0A0A;#E5E5E5;#333333,Matrix Green; Threat Red; Terminal Black; Stealth Mode; High contrast terminal aesthetics
-67,Legal Tech / Compliance,#1e293b;#cbd5e1;#d97706;#ffffff;#0f172a;#e2e8f0,Slate Blue authority; Amber warnings; Clean document white; Serif typography compatibility
-68,EdTech / Learning,#6d28d9;#ede9fe;#f59e0b;#ffffff;#1f2937;#ddd6fe,Deep Purple (Wisdom); Playful Yellow (Engagement); Soft Lavender backgrounds; Accessible contrast
-69,AgriTech / Precision Farming,#3f6212;#ecfccb;#3b82f6;#ffffff;#1a202c;#d9f99d,Growth Green; Sky Blue; Earth Brown hints; Data-driven nature; High visibility outdoor mode
-
-Lime & Obsidian,Developer Tools,#C2E045,#1C1C1E,#909392,#C2E045,#F5F7F6,#FFFFFF,#1C1C1E,#E5F87E,#F5D547,#FF6B6B
+128,Crypto Hardware Wallet,#FF7F50,#2D2D2D,#FF7F50,#FFFFFF,#1A1A1A,#E5E5E5,Warm coral brand identity: coral #FF7F50 for CTAs and brand shadows. Warm neutral scale (not slate). Mesh gradient backgrounds with coral tints. Shadow-[#FF7F50]/30 for brand-tinted depth
+129,Biotech / Genomics,#008080,#e6f7ff,#ff007f,#ffffff,#111827,#e5e7eb,DNA Sequencing; Clean Lab aesthetics; Trust & Precision; Teal for health; Pink for biological markers
+130,Quantum Computing,#1a0b2e,#7000ff,#00ffff,#0b0c15,#ffffff,#2d2d2d,Qubit states; Superposition violets; Deep void blacks; Neon cyan interference patterns; High contrast
+131,Climate Tech / Sustainability,#2f855a,#f0fff4,#ecc94b,#ffffff,#1a202c,#c6f6d5,Solarpunk; Nature-tech; Emerald greens; Solar yellows; Clean air whites; Organic feel without being rustic
+132,Autonomous Systems / Robotics,#ff4500,#1a1a1a,#3b82f6,#f3f4f6,#000000,#d1d5db,Industrial safety orange; Machine vision blue; Steel greys; High visibility; Warning & Action zones
+133,Brain-Computer Interface (BCI),#6366f1,#e0e7ff,#f59e0b,#0f172a,#f8fafc,#334155,Neural activity; Synapse gold; Cerebral indigo; Deep focus dark mode; Calm but alert
+134,Space Tech / Aerospace,#0B3D91,#FFFFFF,#D12229,#000000,#F5F5F7,#333333,NASA Blue; Mars Red accent; Starfield Black; International Space Station White; High reliability
+135,Cybersecurity / InfoSec,#00FF00,#000000,#FF0000,#0A0A0A,#E5E5E5,#333333,Matrix Green; Threat Red; Terminal Black; Stealth Mode; High contrast terminal aesthetics
+136,Legal Tech / Compliance,#1e293b,#cbd5e1,#d97706,#ffffff,#0f172a,#e2e8f0,Slate Blue authority; Amber warnings; Clean document white; Serif typography compatibility
+137,EdTech / Learning,#6d28d9,#ede9fe,#f59e0b,#ffffff,#1f2937,#ddd6fe,Deep Purple (Wisdom); Playful Yellow (Engagement); Soft Lavender backgrounds; Accessible contrast
+138,AgriTech / Precision Farming,#3f6212,#ecfccb,#3b82f6,#ffffff,#1a202c,#d9f99d,Growth Green; Sky Blue; Earth Brown hints; Data-driven nature; High visibility outdoor mode
+139,Developer Tools,#C2E045,#1C1C1E,#C2E045,#F5F7F6,#1C1C1E,#909392,"Lime & Obsidian palette, source order: #C2E045, #1C1C1E, #909392, #C2E045, #F5F7F6, #FFFFFF, #1C1C1E, #E5F87E, #F5D547, #FF6B6B"

@@ -1,11 +1,11 @@
 import { readFile } from 'fs/promises';
 import { join } from 'path';
-import { parse } from 'csv-parse/sync';
 import chalk from 'chalk';
+import { parseCsv } from '../lib/csv';
 
 const DATA_FILE = join(import.meta.dir, '../data/icon-libraries.csv');
 
-interface IconLibrary {
+type IconLibrary = {
   name: string;
   count: string;
   type: string;
@@ -13,16 +13,12 @@ interface IconLibrary {
   docs_url: string;
   cdn_url: string;
   implementation_type: string;
-}
+};
 
 export async function iconsCommand(query?: string) {
   try {
     const csvContent = await readFile(DATA_FILE, 'utf-8');
-    const records = parse(csvContent, {
-      columns: true,
-      skip_empty_lines: true,
-      trim: true,
-    }) as IconLibrary[];
+    const records = parseCsv(csvContent) as IconLibrary[];
 
     if (query) {
       const results = records.filter((r) => 

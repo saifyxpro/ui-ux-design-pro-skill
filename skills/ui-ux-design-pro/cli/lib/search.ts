@@ -1,9 +1,9 @@
 import { create, insertMultiple, search as oramaSearch } from '@orama/orama';
 import { stemmer } from '@orama/stemmers/english';
-import { parse } from 'csv-parse/sync';
 import { readdir, readFile } from 'fs/promises';
 import { join } from 'path';
 import chalk from 'chalk';
+import { parseCsv } from './csv';
 
 // Define the "Masterpiece" Schema
 // We map all distinct CSVs into this unified structure for global search
@@ -68,13 +68,7 @@ export async function getIndex() {
       const csvContent = await readFile(filePath, 'utf-8');
       
       try {
-        const records = parse(csvContent, {
-          columns: true,
-          skip_empty_lines: true,
-          trim: true,
-          relax_column_count: true,
-          relax_quotes: true,
-        });
+        const records = parseCsv(csvContent);
 
         for (const row of records) {
           // Find a suitable title
