@@ -25,11 +25,14 @@ bun run cli/index.ts search "glassmorphism" --domain style
 # Audit UI code quality
 bun run cli/index.ts audit src/App.tsx
 
-# Icon search
+# Search one framework guide
+bun run cli/index.ts search "useEffect" --stack react
+
+# Icon search (icons and icon libraries)
 bun run cli/index.ts icons "arrow"
 ```
 
-**Available domains:** `product`, `style`, `typography`, `color`, `landing`, `chart`, `ux`, `reasoning`, `react`, `web`
+**Available domains:** `product`, `style`, `typography`, `color`, `landing`, `chart`, `ux`, `reasoning`, `react`, `web`, `icon`, `icon-library`, `component`, `hallucination`. An unknown domain or stack is an error. The table is `DOMAINS` in `cli/lib/search.ts`.
 
 **Available stacks (16):** `html-tailwind`, `react`, `nextjs`, `vue`, `nuxtjs`, `nuxt-ui`, `svelte`, `astro`, `angular`, `remix`, `solidjs`, `swiftui`, `react-native`, `flutter`, `shadcn`, `jetpack-compose`
 

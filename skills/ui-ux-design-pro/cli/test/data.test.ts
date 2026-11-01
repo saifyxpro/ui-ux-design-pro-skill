@@ -42,7 +42,7 @@ describe('CSV databases', () => {
 
 describe('search index', () => {
   test('finds chart types from the end of charts.csv', async () => {
-    const hits = await searchDesign('attention rollout', 'charts');
+    const hits = await searchDesign('attention rollout', { domain: 'chart' });
     expect(hits.map((hit) => hit.data['Data Type'])).toContain('Multi-head attention');
   });
 });

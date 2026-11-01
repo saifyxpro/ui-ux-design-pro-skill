@@ -426,7 +426,7 @@ bun run cli/index.ts generate "fintech dashboard" --stack nextjs --output system
 For the best UI/UX output, always start by generating a design system before writing any code. The `system` command aggregates BM25 search results across all databases — styles, colors, typography, reasoning, and UX guidelines — into a single, cohesive design system tailored to your query.
 
 ```bash
-bun run cli/index.ts generate "Warmth & Approachability" --stack html --output design-system.md
+bun run cli/index.ts generate "Warmth & Approachability" --stack html-tailwind --output design-system.md
 ```
 
 This produces a structured Markdown file containing:

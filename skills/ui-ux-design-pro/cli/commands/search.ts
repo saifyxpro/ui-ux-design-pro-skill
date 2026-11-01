@@ -1,11 +1,11 @@
 import chalk from 'chalk';
 import { searchDesign } from '../lib/search';
 
-export async function searchCommand(query: string, options: { domain?: string; format?: string }) {
+export async function searchCommand(query: string, options: { domain?: string; stack?: string; format?: string }) {
   // console.log(chalk.blue(`Searching for "${query}"...`));
   
   try {
-    const hits = await searchDesign(query, options.domain);
+    const hits = await searchDesign(query, { domain: options.domain, stack: options.stack });
 
     if (hits.length === 0) {
       console.log(chalk.yellow(`No results found for "${query}"`));
@@ -45,7 +45,7 @@ export async function searchCommand(query: string, options: { domain?: string; f
     }
 
   } catch (err) {
-    console.error(chalk.red('Search failed:'), err);
+    console.error(chalk.red('Search failed:'), err instanceof Error ? err.message : err);
     process.exit(1);
   }
 }
