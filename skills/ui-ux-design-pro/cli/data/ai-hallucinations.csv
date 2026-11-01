@@ -1,7 +1,7 @@
 Error_ID,Category,Error_Name,Description,Incorrect_Pattern,Correct_Pattern,Severity,Context
 AI_ERR_001,Tailwind,Dynamic Class Interpolation,Tailwind JIT compiler cannot scan interpolated strings.,className={`bg-${color}-500`},"const maps = {red: 'bg-red-500'}; className={maps[color]}",Critical,React Components
 AI_ERR_002,Visual,Z-Index Stacking War,Blindly increasing z-index without regarding stacking context.,"z- on child of transformed parent","Use Portals or remove transform from parent",High,Modals/Tooltips
-AI_ERR_003,Logic,Race Condition Fetch,Data fetching in useEffect without cleanup/abort.,useEffect(() => { fetch().then(set) }, [url]),"useEffect(() => { const ab = new AbortController();... return () => ab.abort(); }, [url])",Medium,Data Fetching
+AI_ERR_003,Logic,Race Condition Fetch,Data fetching in useEffect without cleanup/abort.,"useEffect(() => { fetch().then(set) }, [url])","useEffect(() => { const ab = new AbortController();... return () => ab.abort(); }, [url])",Medium,Data Fetching
 AI_ERR_004,Accessibility,Clickable Div,Div with onClick missing semantic roles.,"<div onClick={fn}>Btn</div>","<button type=""button"" onClick={fn}>Btn</button>",Critical,Interactive Elements
 AI_ERR_005,Tailwind,Non-Existent Utility,Hallucinating utilities that don't exist in config.,"text-shadow-md (in v3 context)","class=""drop-shadow-md"" or custom plugin",Low,Styling
 AI_ERR_006,Layout,Double Scrollbar,Applying overflow to multiple nested containers.,"html { overflow-y: scroll } body { overflow-y: scroll }","Apply overflow only to the root scroller",Medium,Global CSS

@@ -25,7 +25,7 @@ No,Category,Icon Name,Keywords,Library,Import Code,Usage,Best For,Style
 24,Status,alert-triangle,warning caution attention danger,Lucide,import { AlertTriangle } from 'lucide-react',<AlertTriangle />,Warning message caution,Outline
 25,Status,alert-circle,info notice information help,Lucide,import { AlertCircle } from 'lucide-react',<AlertCircle />,Info notice alert,Outline
 26,Status,info,information help tooltip details,Lucide,import { Info } from 'lucide-react',<Info />,Information tooltip help,Outline
-27,Status,loader,loading spinner processing wait,Lucide,import { Loader } from 'lucide-react',<Loader className="animate-spin" />,Loading state spinner,Outline
+27,Status,loader,loading spinner processing wait,Lucide,import { Loader } from 'lucide-react',"<Loader className=""animate-spin"" />",Loading state spinner,Outline
 28,Status,clock,time schedule pending wait,Lucide,import { Clock } from 'lucide-react',<Clock />,Pending time schedule,Outline
 29,Communication,mail,email message inbox letter,Lucide,import { Mail } from 'lucide-react',<Mail />,Email contact inbox,Outline
 30,Communication,message-circle,chat comment bubble conversation,Lucide,import { MessageCircle } from 'lucide-react',<MessageCircle />,Chat comment message,Outline

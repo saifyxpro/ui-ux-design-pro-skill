@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "bun run index.ts",
-    "generate": "bun run index.ts generate"
+    "generate": "bun run index.ts generate",
+    "test": "bun test"
   },
   "devDependencies": {
     "@types/bun": "latest"

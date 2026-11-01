@@ -1,11 +1,12 @@
 import { readFile } from 'fs/promises';
 import { join } from 'path';
-import { parse } from 'csv-parse/sync';
 import chalk from 'chalk';
+import { parseCsv } from '../lib/csv';
+import { searchDesign } from '../lib/search';
 
 const DATA_FILE = join(import.meta.dir, '../data/icon-libraries.csv');
 
-interface IconLibrary {
+type IconLibrary = {
   name: string;
   count: string;
   type: string;
@@ -13,36 +14,50 @@ interface IconLibrary {
   docs_url: string;
   cdn_url: string;
   implementation_type: string;
-}
+};
 
 export async function iconsCommand(query?: string) {
   try {
     const csvContent = await readFile(DATA_FILE, 'utf-8');
-    const records = parse(csvContent, {
-      columns: true,
-      skip_empty_lines: true,
-      trim: true,
-    }) as IconLibrary[];
+    const records = parseCsv(csvContent) as IconLibrary[];
 
     if (query) {
-      const results = records.filter((r) => 
+      const libraries = records.filter((r) => 
         r.name.toLowerCase().includes(query.toLowerCase())
       );
+      // The Library column is searchable too: a library name alone must not list its icons at random.
+      const icons = (await searchDesign(query, { domain: 'icon' })).filter(({ data }) =>
+        !data.Library.toLowerCase().includes(query.toLowerCase())
+      );
 
-      if (results.length === 0) {
-        console.log(chalk.yellow(`No icon libraries found matching "${query}"`));
+      if (libraries.length === 0 && icons.length === 0) {
+        console.log(chalk.yellow(`No icons or icon libraries found matching "${query}"`));
         return;
       }
 
-      console.log(`\n# Icon Libraries Matching "${query}"\n`);
-      for (const r of results) {
-        console.log(`## ${r.name}`);
-        console.log(`- **Count**: ${r.count}`);
-        console.log(`- **Type**: ${r.implementation_type}`);
-        console.log(`- **Best For**: ${r.best_for}`);
-        console.log(`- **Docs**: ${r.docs_url}`);
-        console.log(`- **CDN**: \`${r.cdn_url}\``);
-        console.log('');
+      if (icons.length > 0) {
+        console.log(`\n# Icons Matching "${query}"\n`);
+        for (const { title, data } of icons) {
+          console.log(`## ${title}`);
+          console.log(`- **Library**: ${data.Library}`);
+          console.log(`- **Import**: \`${data['Import Code']}\``);
+          console.log(`- **Usage**: \`${data.Usage}\``);
+          console.log(`- **Best For**: ${data['Best For']}`);
+          console.log('');
+        }
+      }
+
+      if (libraries.length > 0) {
+        console.log(`\n# Icon Libraries Matching "${query}"\n`);
+        for (const r of libraries) {
+          console.log(`## ${r.name}`);
+          console.log(`- **Count**: ${r.count}`);
+          console.log(`- **Type**: ${r.implementation_type}`);
+          console.log(`- **Best For**: ${r.best_for}`);
+          console.log(`- **Docs**: ${r.docs_url}`);
+          console.log(`- **CDN**: \`${r.cdn_url}\``);
+          console.log('');
+        }
       }
     } else {
       console.log(`\n# Top Icon Libraries (2025)\n`);

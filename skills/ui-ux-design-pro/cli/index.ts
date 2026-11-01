@@ -7,18 +7,20 @@ import { searchCommand } from './commands/search';
 import { iconsCommand } from './commands/icons';
 import { auditCommand } from './commands/audit';
 import { generateSystemCommand } from './commands/generate';
+import { DOMAINS } from './lib/search';
 
 
 const cli = cac('design-cli');
 
 cli
   .command('search <query>', 'Search across all design databases')
-  .option('--domain <domain>', 'Restrict search to a specific domain (style, icon, color, etc.)')
+  .option('--domain <domain>', `Restrict search to a domain (${Object.keys(DOMAINS).join(', ')})`)
+  .option('--stack <stack>', 'Restrict search to a framework guide (e.g. nextjs)')
   .option('--format <format>', 'Output format (markdown, json)', { default: 'markdown' })
   .action(searchCommand);
 
 cli
-  .command('icons [query]', 'List or search icon libraries')
+  .command('icons [query]', 'List icon libraries, or search icons and icon libraries')
   .action(iconsCommand);
 
 cli

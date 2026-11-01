@@ -24,6 +24,8 @@ You can run the CLI directly with `bun run`:
 ```bash
 # Search
 bun run index.ts search "glassmorphism"
+bun run index.ts search "glassmorphism" --domain style
+bun run index.ts search "useEffect" --stack react
 
 # Icons
 bun run index.ts icons "arrow"
@@ -37,7 +39,11 @@ bun run index.ts generate "fintech dashboard" --stack nextjs --output system.jso
 
 ## Commands
 
-- `search <query>`: Search the design knowledge base.
-- `icons <query>`: Find icons.
+- `search <query>`: Search the design knowledge base, optionally restricted with `--domain` or `--stack`. An unknown domain or stack is an error.
+- `icons <query>`: Find icons and icon libraries.
 - `audit <files>`: Audit UI files.
-- `generate <query>`: Generate a design system.
+- `generate <query>`: Generate a design system. `--stack` adds that framework's guidelines to the output.
+
+**Domains:** `product`, `style`, `typography`, `color`, `landing`, `chart`, `ux`, `reasoning`, `react`, `web`, `icon`, `icon-library`, `component`, `hallucination`.
+
+**Stacks:** the file names in `data/stacks/` (`nextjs`, `react-native`, `html-tailwind`...).
